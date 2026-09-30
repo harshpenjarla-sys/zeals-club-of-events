@@ -49,8 +49,8 @@ app.use('/api/notifications', notificationRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Health check
-app.get('/api/health', (req, res) => {
+// Root and Health check
+app.get(['/', '/api', '/api/health'], (req, res) => {
   res.json({
     status: 'online',
     platform: 'Zeal\'s Club of Events API',
@@ -59,6 +59,7 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
 
 // Global 404 handler for unknown routes
 app.use((req, res) => {
