@@ -1,0 +1,27 @@
+-- =======================================================
+-- ZEAL'S CLUB OF EVENTS - SAMPLE SEED DATA (MySQL 8.0+)
+-- =======================================================
+
+USE zeals_events;
+
+-- Insert Venues
+INSERT INTO venues (id, name, code, location, capacity, description, image, map_x, map_y, facilities) VALUES
+(1, 'Main Auditorium', 'AUD-MAIN', 'Central Campus, Block A, Ground Floor', 1200, 'Acoustically treated grand hall with 4K laser projection, immersive surround sound, and green rooms.', 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&auto=format&fit=crop&q=80', 48.00, 42.00, 'Laser Projector, Dolby Atmos, AC, VIP Lounge, Stage Rigging'),
+(2, 'Dr. APJ Abdul Kalam Seminar Hall', 'SEM-HALL', 'Academic Block B, 2nd Floor', 350, 'Tiered executive auditorium for conferences, keynotes, research symposiums, and startup pitches.', 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&auto=format&fit=crop&q=80', 35.00, 30.00, 'Dual HD Projectors, Podiums, Wireless Mics, Live Stream Deck, AC'),
+(3, 'Turing Computer Lab Complex', 'LAB-COMP', 'IT & CS Block, 3rd Floor', 220, 'High-speed gigabit networked workstations, dual monitors, Nvidia GPU clusters for hackathons.', 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&auto=format&fit=crop&q=80', 22.00, 55.00, '1Gbps LAN, Dual Monitors, UPS Backup, Air Conditioned, Cloud Server Access'),
+(4, 'Zeal Sports Ground & Stadium', 'SPT-GRND', 'West Campus Athletic Zone', 3000, 'Floodlit Olympic-standard football turf, 400m synthetic running track, and spectator pavilion.', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format&fit=crop&q=80', 75.00, 25.00, 'Floodlights, Commentary Box, Changing Rooms, First Aid Station'),
+(5, 'Indoor Basketball Arena', 'SPT-INDR', 'Sports Complex Building', 800, 'Maple hardwood indoor court with electronic scoreboards, referee consoles, and gallery seating.', 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1200&auto=format&fit=crop&q=80', 82.00, 45.00, 'Maple Hardwood Floor, Digital Scoreboards, Shower Facilities, Sound System'),
+(6, 'Open Air Amphitheatre', 'AMPHI-OAT', 'Lakeside Cultural Avenue', 1500, 'Scenic amphitheatre under the stars for battle of the bands, dramatic performances, and cultural nights.', 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&auto=format&fit=crop&q=80', 60.00, 72.00, 'Outdoor Concert Lighting, Stage Smoke, Open Sky Seating'),
+(7, 'Center for Innovation & AI Lab', 'LAB-INNOV', 'R&D Technology Hub, 1st Floor', 140, 'Maker space equipped with 3D printers, IoT testbeds, robotics arenas, and agile sprint tables.', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&auto=format&fit=crop&q=80', 28.00, 78.00, '3D Printers, Soldering Stations, Drone Test Cage, Whiteboard Walls'),
+(8, 'Multi-Utility Workshop Hall', 'WRK-HALL', 'Mechanical Sciences Annex', 250, 'Flexible modular hall for hands-on technical workshops, art design bootcamps, and exhibitions.', 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&auto=format&fit=crop&q=80', 42.00, 65.00, 'Modular Desks, Power Pods, Presentation Screens, Ventilation Units'),
+(9, 'Central Lawn & Festival Plaza', 'PLZ-LAWN', 'Heart of Zeal Campus', 4000, 'Lush green festival grounds for college carnivals, flea markets, music fests, and cultural expos.', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&auto=format&fit=crop&q=80', 52.00, 52.00, 'Open Canopy, Stalls Electrical Grid, Ambient Festoon Lights'),
+(10, 'Student Activity Center (SAC)', 'SAC-CTR', 'Student Union Building, 1st Floor', 500, 'Hub for club committee meetings, rehearsals, board games, acoustic jams, and debate practice.', 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format&fit=crop&q=80', 65.00, 35.00, 'Club Cubicles, Mirror Rehearsal Studio, Lounge Couches, Sound Mixer')
+ON DUPLICATE KEY UPDATE name=VALUES(name);
+
+-- Default Demo Accounts (Passwords: Admin@123, Organizer@123, Student@123)
+-- Uses standard bcrypt hashes
+INSERT INTO users (id, name, email, password_hash, phone, student_id, college, department, year, role, profile_image, bio) VALUES
+(1, 'Dr. Rajeshwar Sharma', 'admin@zeals.edu', '$2a$10$w0f5u471H3hI9bUjS26fK.k1v8N05Q6z5KxM8v3Kq3mZg.o/14eQy', '+91 98765 00001', 'ZEAL-ADM-001', 'Zeal Institute of Technology & Management', 'Dean of Student Affairs', 'Faculty', 'admin', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400', 'Dean of Student Affairs & Chief Mentor of Zeal\'s Club of Events.'),
+(2, 'Aarav Mehta', 'organizer@zeals.edu', '$2a$10$gM.GgQ0tS1qj3uXzN.o8v.qY3KkL6V1zY9mKxO8p3Lq2mZg.o/14e', '+91 98765 11001', 'ZEAL-2023-CS-042', 'Zeal Institute of Technology & Management', 'Computer Engineering', 'Final Year', 'organizer', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400', 'President of Coding Club & Chief Technical Coordinator for Zeal Fest 2026.'),
+(7, 'Devika Nair', 'student@zeals.edu', '$2a$10$fN.HhR1uT2rk4vYaO.p9w.rZ4LlM7W2zZ0nLyP9q4Mr3nah.p/25f', '+91 98765 22001', 'ZEAL-2024-CS-112', 'Zeal Institute of Technology & Management', 'Computer Science & Engineering', '3rd Year', 'student', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400', 'Tech explorer, competitive programmer, and active member of Zeal Arts & Coding clubs.')
+ON DUPLICATE KEY UPDATE name=VALUES(name);
