@@ -1300,6 +1300,10 @@ async function seed() {
   console.log('🎉 Zeal College of Engineering & Research (ZCOER, Pune) data successfully loaded!');
 }
 
-seed().catch(err => {
-  console.error('Error during seeding:', err);
-});
+if (require.main === module) {
+  seed().catch(err => {
+    console.error('Error during seeding:', err);
+  });
+}
+
+module.exports = seed;

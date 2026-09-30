@@ -49,6 +49,34 @@ app.use('/api/notifications', notificationRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/admin', adminRoutes);
 
+const db = require('./database/db');
+const seed = require('./database/seed');
+
+// Auto-seed if database is empty on start
+async function autoSeedIfEmpty() {
+  try {
+    const row = db.prepare('SELECT COUNT(*) as count FROM events').get();
+    if (!row || row.count === 0) {
+      console.log('🌱 Empty database detected on start. Auto-seeding official ZCOER events & clubs...');
+      await seed();
+      console.log('✅ Auto-seed completed successfully!');
+    }
+  } catch (err) {
+    console.error('Auto-seed check error:', err);
+  }
+}
+autoSeedIfEmpty();
+
+// Route to manually trigger seed if desired
+app.all('/api/seed', async (req, res) => {
+  try {
+    await seed();
+    res.json({ success: true, message: 'Official ZCOER data seeded successfully!' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Root and Health check
 app.get(['/', '/api', '/api/health'], (req, res) => {
   res.json({
