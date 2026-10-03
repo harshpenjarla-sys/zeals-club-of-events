@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeals-club-of-events.vercel.app/sitemap.xml
