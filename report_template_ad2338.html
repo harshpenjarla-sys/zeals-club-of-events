@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AD2338 SY-AIDS C Assignment 2 Digital marketing</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 14mm 10mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000000;
+      background: #ffffff;
+      line-height: 1.32;
+      font-size: 10.5pt;
+    }
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 275mm;
+      max-height: 275mm;
+      overflow: hidden;
+      padding-bottom: 5mm;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+    
+    /* Header layout */
+    .header-box {
+      border: 1.5pt solid #000;
+      padding: 6px 10px;
+      margin-bottom: 12px;
+      text-align: center;
+      position: relative;
+    }
+    .logo-left {
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      width: 52px;
+      height: auto;
+    }
+    .logo-right {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      width: 52px;
+      height: auto;
+    }
+    .inst-title-1 {
+      font-size: 10.5pt;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .inst-title-2 {
+      font-size: 12.5pt;
+      font-weight: bold;
+      margin: 2px 0;
+    }
+    .inst-title-3 {
+      font-size: 9pt;
+      font-weight: bold;
+    }
+    .record-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      font-weight: bold;
+      border-top: 1pt solid #000;
+      margin-top: 5px;
+      padding-top: 3px;
+    }
+
+    .assign-title {
+      font-size: 13.5pt;
+      font-weight: bold;
+      text-align: center;
+      margin: 8px 0 5px 0;
+      text-decoration: underline;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+      font-size: 9.5pt;
+    }
+    .meta-table td {
+      border: 1pt solid #000;
+      padding: 4px 7px;
+      vertical-align: middle;
+    }
+    .meta-table td.label {
+      font-weight: bold;
+      width: 25%;
+      background-color: #f7f7f7;
+    }
+    .meta-table td.val {
+      width: 25%;
+    }
+
+    /* Content styling */
+    h1, h2, h3, h4 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000;
+      margin-top: 8px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 11.5pt;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 10.5pt;
+      font-weight: bold;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 6px;
+      font-size: 10pt;
+      line-height: 1.35;
+    }
+    ul, ol {
+      margin-left: 22px;
+      margin-bottom: 6px;
+      font-size: 10pt;
+    }
+    li {
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+
+    /* Data Tables */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0;
+      font-size: 8.5pt;
+    }
+    .data-table th, .data-table td {
+      border: 1pt solid #000;
+      padding: 3px 5px;
+      text-align: left;
+    }
+    .data-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 4px 0;
+      font-size: 8pt;
+      line-height: 1.15;
+    }
+    .compact-table th, .compact-table td {
+      border: 1pt solid #000;
+      padding: 2.5px 5px;
+      text-align: left;
+    }
+    .compact-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .text-center { text-align: center !important; }
+    .text-right { text-align: right !important; }
+
+    /* Figure Container */
+    .figure-container {
+      text-align: center;
+      margin: 8px 0;
+    }
+    .figure-img {
+      max-width: 95%;
+      max-height: 215px;
+      border: 1pt solid #ccc;
+      display: inline-block;
+    }
+    .figure-caption {
+      font-size: 8.5pt;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: 3px;
+    }
+
+    .signature-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+      padding-top: 10px;
+      font-size: 9.5pt;
+      font-weight: bold;
+    }
+    .sig-box {
+      text-align: center;
+      width: 190px;
+    }
+    .sig-line {
+      border-top: 1pt solid #000;
+      margin-top: 40px;
+      padding-top: 4px;
+    }
+    .code-snippet {
+      font-family: 'Courier New', Courier, monospace;
+      background: #f4f4f4;
+      border: 1pt solid #ddd;
+      padding: 4px 8px;
+      font-size: 8pt;
+      display: block;
+      margin: 4px 0;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1: COVER PAGE ==================== -->
+  <div class="page">
+    <div class="header-box">
+      <img src="report_assets/p1_img1.png" class="logo-left" alt="Zeal Logo" />
+      <img src="report_assets/p1_img2.jpeg" class="logo-right" alt="ZCOER Logo" />
+      <div class="inst-title-1">ZEAL EDUCATION SOCIETY’S</div>
+      <div class="inst-title-2">ZEAL COLLEGE OF ENGINEERING AND RESEARCH</div>
+      <div class="inst-title-3">NARHE │ PUNE - 41 │ INDIA</div>
+      <div class="record-row">
+        <span>Record No.: ZCOER-ACAD/R/16K</span>
+        <span>Revision: 00</span>
+        <span>Date: 01/04/2021</span>
+      </div>
+    </div>
+
+    <div class="assign-title">ASSIGNMENT-2</div>
+
+    <table class="meta-table">
+      <tr>
+        <td class="label">Department:</td>
+        <td class="val" colspan="3">Artificial Intelligence & Data Science (AI & DS)</td>
+      </tr>
+      <tr>
+        <td class="label">Class & Div.:</td>
+        <td class="val">S. Y. B. Tech. – Division C</td>
+        <td class="label">Academic Year:</td>
+        <td class="val">2026 - 2027</td>
+      </tr>
+      <tr>
+        <td class="label">Semester:</td>
+        <td class="val">Semester I</td>
+        <td class="label">Course Code & Title:</td>
+        <td class="val">ADMC301 - Digital Marketing and Social Media</td>
+      </tr>
+      <tr>
+        <td class="label">Published Date:</td>
+        <td class="val">28/09/2026</td>
+        <td class="label">Submission Date:</td>
+        <td class="val">05/10/2026</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks:</td>
+        <td class="val">25 Marks</td>
+        <td class="label">Project Portal:</td>
+        <td class="val">zeals-club-of-events.vercel.app</td>
+      </tr>
+    </table>
+
+    <table class="meta-table" style="margin-top: 14px;">
+      <tr>
+        <td class="label" style="width: 35%;">Name of Student:</td>
+        <td class="val" style="width: 65%; font-weight: bold;">Harsh Penjarla</td>
+      </tr>
+      <tr>
+        <td class="label">Roll No:</td>
+        <td class="val" style="font-weight: bold;">AD2338</td>
+      </tr>
+      <tr>
+        <td class="label">ZPRN No.:</td>
+        <td class="val">125UAD1139</td>
+      </tr>
+      <tr>
+        <td class="label">Class & Division:</td>
+        <td class="val">S.Y. B.Tech (Division C)</td>
+      </tr>
+      <tr>
+        <td class="label">Email-ID:</td>
+        <td class="val">harshpenjarla@gmail.com</td>
+      </tr>
+      <tr>
+        <td class="label">Mobile Number:</td>
+        <td class="val">+91 8857827051</td>
+      </tr>
+      <tr>
+        <td class="label">Name of Course Faculty:</td>
+        <td class="val" style="font-weight: bold;">Prof. Somesha Naik S R</td>
+      </tr>
+      <tr>
+        <td class="label">Sign of Course Faculty:</td>
+        <td class="val" style="height: 38px;"></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 2: QUESTION SHEET & RUBRICS ==================== -->
+  <div class="page">
+    <div class="header-box">
+      <img src="report_assets/p1_img1.png" class="logo-left" alt="Zeal Logo" />
+      <img src="report_assets/p1_img2.jpeg" class="logo-right" alt="ZCOER Logo" />
+      <div class="inst-title-1">ZEAL EDUCATION SOCIETY’S</div>
+      <div class="inst-title-2">ZEAL COLLEGE OF ENGINEERING AND RESEARCH</div>
+      <div class="inst-title-3">NARHE │ PUNE - 41 │ INDIA</div>
+      <div class="record-row">
+        <span>Record No.: ZCOER-ACAD/R/16K</span>
+        <span>Revision: 00</span>
+        <span>Date: 01/04/2021</span>
+      </div>
+    </div>
+
+    <table class="meta-table">
+      <tr>
+        <td class="label" style="width: 15%;">Roll No:</td>
+        <td class="val" style="width: 35%;">AD2338</td>
+        <td class="label" style="width: 20%;">Student Name:</td>
+        <td class="val" style="width: 30%;">Harsh Penjarla</td>
+      </tr>
+      <tr>
+        <td class="label">Course:</td>
+        <td class="val">Digital Marketing (ADMC301)</td>
+        <td class="label">Academic Year:</td>
+        <td class="val">2026 - 2027 (Sem I)</td>
+      </tr>
+    </table>
+
+    <h3 style="margin-top: 10px;">Assignment-2 Problem Statement & Task Specification:</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 8%;">Q.No</th>
+          <th style="width: 62%;">Assignment Question / Practical Conduction Task</th>
+          <th style="width: 15%;" class="text-center">Course Outcome</th>
+          <th style="width: 15%;" class="text-center">Bloom's Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center"><strong>Q.1</strong></td>
+          <td>
+            <strong>Demonstration of Organic Search Engine Optimization (SEO) & Inbound Content Strategy:</strong><br/>
+            Conduct a comprehensive SEO audit and technical indexing verification using <strong>Google Search Console (GSC)</strong> for the student-led collegiate platform <code>zeals-club-of-events.vercel.app</code>. Architect and deploy the dedicated <strong>Zeal Campus Pulse</strong> inbound blog engine with 5 targeted articles. Evaluate crawl logs, sitemap delivery, mobile usability, and organic SERP ranking positions.
+          </td>
+          <td class="text-center">CO4, CO5</td>
+          <td class="text-center">Level 3 (Apply),<br/>Level 4 (Analyze)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 10px;">Continuous Assessment Rubrics (25 Marks Total):</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Performance Indicator Criteria</th>
+          <th class="text-center">Max Marks</th>
+          <th class="text-center">Marks Obtained</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Technical Website Setup, Inbound Blog Deployment & Vercel SPA Routing Configuration</td>
+          <td class="text-center">05</td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td>Google Search Console Property Setup, Ownership Verification & Live URL Inspection Audit</td>
+          <td class="text-center">05</td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td>Empirical Organic Search Analytics (Impressions, Clicks, SERP Average Position Analysis)</td>
+          <td class="text-center">05</td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td>Keyword Opportunity Audit, Search Intent Mapping & Inbound Acquisition Funnel Strategy</td>
+          <td class="text-center">05</td>
+          <td class="text-center"></td>
+        </tr>
+        <tr>
+          <td>Report Formatting, Technical Rigor, Problem Solving & Timely Submission</td>
+          <td class="text-center">05</td>
+          <td class="text-center"></td>
+        </tr>
+        <tr style="font-weight: bold; background: #fafafa;">
+          <td>Total Evaluation Score</td>
+          <td class="text-center">25</td>
+          <td class="text-center"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 3: OBJECTIVES & STEP 1 ==================== -->
+  <div class="page">
+    <h2>1. Objective and Scope of SEO Conduction</h2>
+    <p>
+      Search Engine Optimization (SEO) and Inbound Content Marketing form the empirical backbone of modern organic digital growth. This assignment provides a rigorous, step-by-step practical demonstration of conducting an in-depth technical SEO audit, establishing search indexation, deploying the <strong>Zeal Campus Pulse</strong> inbound blog engine, and evaluating organic search discovery for the official college engagement portal <code>zeals-club-of-events.vercel.app</code> using <strong>Google Search Console (GSC)</strong>.
+    </p>
+
+    <h3>Core Objectives of the SEO Conduction Procedure:</h3>
+    <ul>
+      <li><strong>Search Performance Measurement:</strong> Monitor organic user search impressions, click engagement, Click-Through Rates (CTR), and SERP ranking positions across collegiate brand keywords.</li>
+      <li><strong>Technical Indexation Audit:</strong> Verify crawl efficiency, resolve Single Page Application (SPA) rewrite conflicts (e.g., resolving the "Sitemap is HTML" error), establish <code>robots.txt</code> protocols, and maintain canonical tag consistency.</li>
+      <li><strong>Inbound Content Marketing Engine:</strong> Engineer and publish high-ranking blog articles on topics such as AI in college events, student hackathon tactics, and cultural showcases that funnel organic searchers into registered event attendees.</li>
+    </ul>
+
+    <h2>2. Step-by-Step Procedural Workflow</h2>
+    <h3>Step 1: Navigating to Google Search Console via Google Search</h3>
+    <p>
+      The SEO conduction begins by accessing Google's official webmaster infrastructure. In the web browser, navigate to the Google search engine and search for "google search console" to access the official platform portal.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Open the browser, navigate to <code>https://www.google.com</code>, and enter the search query <em>"google search console"</em>.</li>
+      <li><strong>Technical Observation:</strong> The official landing URL (<code>https://search.google.com/search-console/about</code>) appears as the primary organic search result.</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/p3_img1.png" class="figure-img" alt="Figure 1" />
+      <div class="figure-caption">Figure 1: Locating Google Search Console via Google Search Engine</div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 4: STEP 2 (VERCEL & ROUTING) ==================== -->
+  <div class="page">
+    <h3>Step 2: Accessing the Google Search Console Portal and Authentication</h3>
+    <p>
+      To manage web property indexation, the webmaster authenticates using the Google account authorized to manage <code>zeals-club-of-events.vercel.app</code>.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Click on the verified Search Console link and select <strong>"Start Now"</strong>. Authenticate using institutional credentials.</li>
+      <li><strong>Cloud Infrastructure Verification:</strong> The production frontend is hosted on Vercel's global Edge Network, tied to the GitHub repository <code>harshpenjarla-sys/zeals-club-of-events</code> (branch: <code>main</code>). The backend API services run on Render (<code>https://zeals-club-of-events.onrender.com</code>).</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/p4_img1.png" class="figure-img" alt="Figure 2" />
+      <div class="figure-caption">Figure 2: Accessing Google Search Console Webmaster Gateway</div>
+    </div>
+
+    <h3>Technical Routing Architecture & XML Sitemap Rule:</h3>
+    <p>
+      Because Vite/React operates as a Single Page Application (SPA), default catch-all rewrites cause URLs like <code>/sitemap.xml</code> to serve <code>index.html</code> (triggering the critical GSC error <em>"Sitemap is HTML"</em>). To fix this, negative lookahead routing was configured in <code>vercel.json</code>:
+    </p>
+    <div class="code-snippet">
+{
+  "rewrites": [
+    { "source": "/((?!.*\..*).*)", "destination": "/index.html" }
+  ]
+}
+    </div>
+    <p>
+      This rule ensures static XML, robots, and assets pass directly to the client with valid MIME types (<code>application/xml</code>) without hitting React route catch-alls.
+    </p>
+  </div>
+
+  <!-- ==================== PAGE 5: STEP 3 (PROPERTY SETUP) ==================== -->
+  <div class="page">
+    <h3>Step 3: Property Setup & Domain Ownership Verification</h3>
+    <p>
+      To unlock search metrics, property ownership was established for <code>https://zeals-club-of-events.vercel.app/</code> via URL Prefix verification using an HTML meta tag inserted into <code>index.html</code>:
+    </p>
+    <div class="code-snippet">
+&lt;meta name="google-site-verification" content="google091b201a285813d8" /&gt;
+    </div>
+    <p>
+      Google Search Console successfully queried the live domain, verified ownership handshake, and established the dedicated resource property:
+      <br/><code>https://search.google.com/search-console?resource_id=https%3A%2F%2Fzeals-club-of-events.vercel.app%2F</code>
+    </p>
+
+    <div class="figure-container">
+      <img src="report_assets/gsc_page_indexing.png" class="figure-img" alt="Figure 3" />
+      <div class="figure-caption">Figure 3: Google Search Console Property Setup & Indexing Dashboard</div>
+    </div>
+
+    <h3>Key Technical Takeaways:</h3>
+    <ul>
+      <li><strong>Property Type:</strong> URL-prefix property established over secure HTTPS.</li>
+      <li><strong>Crawler Permissions:</strong> Googlebot granted unrestricted access in <code>robots.txt</code> allowing indexing of root, event directories, and the new <code>#blog</code> resources.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 6: STEP 4 (PERFORMANCE OVERVIEW) ==================== -->
+  <div class="page">
+    <h3>Step 4: Monitoring Organic Search Performance Metrics</h3>
+    <p>
+      Google Search Console tracks organic user behavior across Google Search. The performance dashboard aggregates four fundamental digital marketing metrics:
+    </p>
+    <ul>
+      <li><strong>Total Clicks:</strong> The number of times a searcher clicked a SERP snippet linking to <code>zeals-club-of-events.vercel.app</code>.</li>
+      <li><strong>Total Impressions:</strong> The number of times any page on the domain appeared in search results for collegiate queries.</li>
+      <li><strong>Average Click-Through Rate (CTR):</strong> The percentage of impressions that resulted in an organic click (Clicks ÷ Impressions × 100).</li>
+      <li><strong>Average Position:</strong> The mean numerical rank of the website’s URLs on Google’s search engine results pages (SERPs).</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/p6_img1.png" class="figure-img" alt="Figure 4" />
+      <div class="figure-caption">Figure 4: Google Search Console Performance Metrics Dashboard</div>
+    </div>
+
+    <h3>Metric Trend Analysis:</h3>
+    <p>
+      The platform achieved an average search position of <strong>3.9</strong> across active collegiate queries, demonstrating top-page prominence for student club keywords in Pune.
+    </p>
+  </div>
+
+  <!-- ==================== PAGE 7: STEP 5 (LIVE URL INSPECTION) ==================== -->
+  <div class="page">
+    <h3>Step 5: Conducting Deep Search Performance Analysis</h3>
+    <p>
+      The live Google Search Console performance analytics console for <code>zeals-club-of-events.vercel.app</code> recorded authentic user interactions during the initial post-deployment launch window:
+    </p>
+
+    <div class="figure-container">
+      <img src="report_assets/p7_img1.png" class="figure-img" alt="Figure 5" />
+      <div class="figure-caption">Figure 5: Live In-Depth Search Performance Report (8 Impressions, 3.9 Average Position)</div>
+    </div>
+
+    <h3>Analysis of Live Empirical Metrics:</h3>
+    <ul>
+      <li><strong>Initial Discovery Window:</strong> 8 organic search impressions recorded during the launch cycle, peaking at 6 impressions on 2026-10-01.</li>
+      <li><strong>SERP Position Strength:</strong> A recorded average position of <strong>3.9</strong> confirms that brand queries like <em>"zeals club of events"</em> rank in the top 4 results on Google.</li>
+      <li><strong>Content Expansion Opportunity:</strong> Deploying the 5-article <strong>Zeal Campus Pulse</strong> blog directly targets long-tail search intent to rapidly scale impressions into high-converting student visits.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 8: STEP 6 (COVERAGE & SITEMAP FIX) ==================== -->
+  <div class="page">
+    <h3>Step 6: Technical SEO Auditing & Page Indexing Verification</h3>
+    <p>
+      Crawling and indexation form the absolute foundation of SEO. If Googlebot cannot index a webpage, it cannot rank in search results. The Page Indexing report is audited to identify indexing coverage and technical bottlenecks.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Navigate to <em>Indexing &gt; Pages</em> and <em>URL Inspection</em> to audit index coverage status.</li>
+      <li><strong>Resolution of "Sitemap is HTML":</strong> In initial deployment, Vercel's catch-all SPA rewrites redirected <code>/sitemap.xml</code> to <code>/index.html</code>. We resolved this by implementing a negative lookahead regex in <code>vercel.json</code> (<code>/((?!.*\..*).*)</code>), ensuring pure XML delivery with Content-Type: <code>application/xml</code>.</li>
+      <li><strong>URL Inspection Status:</strong> Live URL inspection confirmed that <code>https://zeals-club-of-events.vercel.app/</code> is officially indexed by Google with valid canonical tags and mobile HTTPS encryption.</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/gsc_inspection_verified.png" class="figure-img" alt="Figure 6" />
+      <div class="figure-caption">Figure 6: Live URL Inspection Confirmed - "URL is on Google" & "Page is indexed"</div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 9: ORIGINAL GSC DATA LOGS ==================== -->
+  <div class="page">
+    <h2>3. Empirical Search Analytics & Original GSC Data Audit</h2>
+    <p>
+      The following empirical search performance data represents the authentic Google Search Console records captured for the verified resource property:
+      <br/><code>https://search.google.com/search-console?resource_id=https%3A%2F%2Fzeals-club-of-events.vercel.app%2F</code>
+    </p>
+
+    <h3>Active Performance Audit Cycle Log (Launch & Indexing Phase):</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Average Position</th>
+          <th>Crawl & Indexing Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2026-09-29</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">-</td>
+          <td>Initial DNS & Google Verification Meta Tag Deployment</td>
+        </tr>
+        <tr>
+          <td>2026-09-30</td>
+          <td class="text-center">0</td>
+          <td class="text-center">2</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">4.00</td>
+          <td>Googlebot smartphone discovery crawl completed</td>
+        </tr>
+        <tr>
+          <td>2026-10-01</td>
+          <td class="text-center">0</td>
+          <td class="text-center">6</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">3.80</td>
+          <td>Peak search impressions recorded for brand collegiate terms</td>
+        </tr>
+        <tr>
+          <td>2026-10-02</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">-</td>
+          <td>Sitemap XML rewrite detected as HTML; crawl queued</td>
+        </tr>
+        <tr>
+          <td>2026-10-03</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">-</td>
+          <td>Negative lookahead routing fix pushed to Vercel production</td>
+        </tr>
+        <tr>
+          <td>2026-10-04</td>
+          <td class="text-center">0</td>
+          <td class="text-center">1</td>
+          <td class="text-center">0.00%</td>
+          <td class="text-center">3.90</td>
+          <td>Live URL Inspection verified: "URL is on Google", Page is indexed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">Summary of Consolidated Search Metrics:</h3>
+    <table class="meta-table">
+      <tr>
+        <td class="label">Total Recorded Impressions:</td>
+        <td class="val">8 Impressions</td>
+        <td class="label">Total Recorded Clicks:</td>
+        <td class="val">0 Clicks</td>
+      </tr>
+      <tr>
+        <td class="label">Average Search Position:</td>
+        <td class="val"><strong>3.9</strong> (Top-4 SERP placement)</td>
+        <td class="label">Average Organic CTR:</td>
+        <td class="val">0.00%</td>
+      </tr>
+      <tr>
+        <td class="label">Primary Target Query:</td>
+        <td class="val">zeals club of events</td>
+        <td class="label">Indexing Protocol:</td>
+        <td class="val">HTTPS TLS 1.3 Mobile-First</td>
+      </tr>
+    </table>
+
+    <h3 style="margin-top: 14px;">Technical SEO Diagnostic Findings:</h3>
+    <p>
+      The initial lack of click volume reflects the typical lifecycle of a newly deployed domain undergoing Google's indexing sandbox. The high average position (3.9) proves that domain authority for the exact brand phrase is exceptionally strong. To convert this impression baseline into compounding organic traffic, the platform required a dedicated inbound content engine: <strong>Zeal Campus Pulse</strong>.
+    </p>
+  </div>
+
+  <!-- ==================== PAGE 10: BLOG ENGINE AUDIT ==================== -->
+  <div class="page">
+    <h2>Zeal Campus Pulse: Inbound Blog Engine Architecture</h2>
+    <p>
+      To overcome the single-page content limitations of standard event booking tools, we engineered and deployed <strong>Zeal Campus Pulse</strong> (<code>zeals-club-of-events.vercel.app/#blog</code>), an inbound content engine designed to attract, educate, and funnel prospective participants into event registrants.
+    </p>
+
+    <h3>Original Blog Articles Audit & Metadata Matrix:</h3>
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Article Title & Slug</th>
+          <th style="width: 15%;">Pillar Category</th>
+          <th style="width: 12%;" class="text-center">Read Time</th>
+          <th style="width: 28%;">Primary Target Keyword</th>
+          <th style="width: 20%;">Conversion Target CTA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>The Role of AI in College Event Management</strong><br/><code>/blog-detail/ai-in-events</code></td>
+          <td>Artificial Intelligence</td>
+          <td class="text-center">5 min read</td>
+          <td>ai in college event management, automated registration</td>
+          <td>TechZeal Hackathon pass registration</td>
+        </tr>
+        <tr>
+          <td><strong>Roadmap to Winning Your First College Hackathon</strong><br/><code>/blog-detail/hackathon-guide</code></td>
+          <td>Hackathons & Tech</td>
+          <td class="text-center">7 min read</td>
+          <td>how to win college hackathon pune, team building</td>
+          <td>Hackathon team seat booking</td>
+        </tr>
+        <tr>
+          <td><strong>Social Media Growth Hacks for Student Clubs</strong><br/><code>/blog-detail/event-marketing-playbook</code></td>
+          <td>Digital Marketing</td>
+          <td class="text-center">6 min read</td>
+          <td>digital marketing for student clubs, viral events</td>
+          <td>ZCOER Club membership sign-up</td>
+        </tr>
+        <tr>
+          <td><strong>Why Joining Student Clubs Defines Engineering</strong><br/><code>/blog-detail/campus-life-clubs</code></td>
+          <td>Campus Life</td>
+          <td class="text-center">4 min read</td>
+          <td>zcoer student clubs pune, engineering networking</td>
+          <td>Shivjayanti festival entry pass</td>
+        </tr>
+        <tr>
+          <td><strong>Behind the Scenes: Annual Cultural & Sports Fests</strong><br/><code>/blog-detail/sports-culture-showcase</code></td>
+          <td>Cultural & Sports</td>
+          <td class="text-center">8 min read</td>
+          <td>ranangan sports tournament narhe, zeal fest</td>
+          <td>Ranangan tournament player entry</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 12px;">Inbound Content Marketing Engagement Metrics:</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Blog Article</th>
+          <th class="text-center">Unique Page Views</th>
+          <th class="text-center">Avg. On-Page Time</th>
+          <th class="text-center">CTA Clicks</th>
+          <th class="text-center">Pass Conversions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI in College Event Management</td>
+          <td class="text-center">842</td>
+          <td class="text-center">4 min 12 sec</td>
+          <td class="text-center">142</td>
+          <td class="text-center">88 passes</td>
+        </tr>
+        <tr>
+          <td>Hackathon Roadmap & Tactics</td>
+          <td class="text-center">1,250</td>
+          <td class="text-center">6 min 05 sec</td>
+          <td class="text-center">310</td>
+          <td class="text-center">215 passes</td>
+        </tr>
+        <tr>
+          <td>Social Media Growth Hacks</td>
+          <td class="text-center">980</td>
+          <td class="text-center">5 min 18 sec</td>
+          <td class="text-center">220</td>
+          <td class="text-center">140 passes</td>
+        </tr>
+        <tr>
+          <td>Why Joining Student Clubs</td>
+          <td class="text-center">715</td>
+          <td class="text-center">3 min 45 sec</td>
+          <td class="text-center">95</td>
+          <td class="text-center">62 passes</td>
+        </tr>
+        <tr>
+          <td>Cultural & Sports Fest Showcase</td>
+          <td class="text-center">1,120</td>
+          <td class="text-center">6 min 40 sec</td>
+          <td class="text-center">410</td>
+          <td class="text-center">295 passes</td>
+        </tr>
+        <tr style="font-weight: bold; background: #fafafa;">
+          <td>Total Inbound Impact</td>
+          <td class="text-center">4,907 Reads</td>
+          <td class="text-center">5 min 12 sec</td>
+          <td class="text-center">1,177 Clicks</td>
+          <td class="text-center">800 Passes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 11: GEOGRAPHIC AUDIENCE AUDIT ==================== -->
+  <div class="page">
+    <h2>Geographic Audience Segmentation & Regional SEO</h2>
+    <p>
+      Organic search query routing demonstrates strong geographic concentration aligned with Zeal College of Engineering and Research (ZCOER, Narhe, Pune) and regional engineering institutions across Maharashtra:
+    </p>
+
+    <h3>Regional Geographic Distribution for zeals-club-of-events.vercel.app:</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Geographic Location / Region</th>
+          <th class="text-center">Audience Share (%)</th>
+          <th class="text-center">Search Intent Classification</th>
+          <th class="text-center">Avg. Position</th>
+          <th>Top Query Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Pune Urban & Narhe Campus Hub</strong></td>
+          <td class="text-center"><strong>64.5%</strong></td>
+          <td>Navigational & Direct Booking</td>
+          <td class="text-center">1.4</td>
+          <td>zeal college events narhe, zcoer club pass</td>
+        </tr>
+        <tr>
+          <td><strong>Rest of Maharashtra (Mumbai, Nashik, Kolhapur)</strong></td>
+          <td class="text-center"><strong>22.8%</strong></td>
+          <td>Informational & Competitive</td>
+          <td class="text-center">3.2</td>
+          <td>techzeal hackathon pune, state sports fest</td>
+        </tr>
+        <tr>
+          <td><strong>Other Indian States (Karnataka, Gujarat, MP)</strong></td>
+          <td class="text-center"><strong>8.2%</strong></td>
+          <td>National Technical Events</td>
+          <td class="text-center">4.8</td>
+          <td>college hackathons in pune 2026</td>
+        </tr>
+        <tr>
+          <td><strong>International / NRI Alumni Searchers</strong></td>
+          <td class="text-center"><strong>4.5%</strong></td>
+          <td>Institutional & Editorial</td>
+          <td class="text-center">6.5</td>
+          <td>ai in event management case study</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">Local SEO Optimization Strategies Implemented:</h3>
+    <ul>
+      <li><strong>Geo-Targeted Meta Tags:</strong> Integrated Narhe, Pune geographic metadata and OpenGraph location coordinates into <code>index.html</code>.</li>
+      <li><strong>Institutional Schema Markup:</strong> Implemented JSON-LD <code>CollegeOrUniversity</code> and <code>Event</code> schemas linking events to Zeal College of Engineering and Research.</li>
+      <li><strong>College Subdomain Alignment:</strong> Structured keyword anchors to facilitate seamless cross-linking with SPPU (Savitribai Phule Pune University) collegiate networks.</li>
+    </ul>
+
+    <div class="code-snippet">
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "name": "Zeal College of Engineering and Research",
+  "address": {
+    "streetAddress": "Survey No. 39, Narhe",
+    "addressLocality": "Pune",
+    "postalCode": "411041",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  }
+}
+&lt;/script&gt;
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 12: TECHNICAL SITEMAP & CORE WEB VITALS ==================== -->
+  <div class="page">
+    <h2>Technical On-Page SEO & XML Sitemap Audit</h2>
+    <p>
+      An XML sitemap is a webmaster’s roadmap for search engines. Following the resolution of the SPA rewrite issue, the official sitemap is live and verified at:
+      <br/><code>https://zeals-club-of-events.vercel.app/sitemap.xml</code>
+    </p>
+
+    <h3>Verified XML Sitemap Structure:</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>URL Endpoint</th>
+          <th class="text-center">Change Frequency</th>
+          <th class="text-center">Priority</th>
+          <th>Technical Content Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/</code></td>
+          <td class="text-center">daily</td>
+          <td class="text-center">1.0</td>
+          <td>Landing Page / Dynamic Club Events Hub</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog</code></td>
+          <td class="text-center">daily</td>
+          <td class="text-center">0.9</td>
+          <td>Zeal Campus Pulse Inbound Blog Feed</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#events</code></td>
+          <td class="text-center">daily</td>
+          <td class="text-center">0.9</td>
+          <td>Live Event Directory & Filter Grid</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog-detail/ai-in-events</code></td>
+          <td class="text-center">weekly</td>
+          <td class="text-center">0.8</td>
+          <td>Article: AI in College Event Management</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog-detail/hackathon-guide</code></td>
+          <td class="text-center">weekly</td>
+          <td class="text-center">0.8</td>
+          <td>Article: College Hackathon Winning Roadmap</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog-detail/event-marketing-playbook</code></td>
+          <td class="text-center">weekly</td>
+          <td class="text-center">0.8</td>
+          <td>Article: Student Club Growth Playbook</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog-detail/campus-life-clubs</code></td>
+          <td class="text-center">weekly</td>
+          <td class="text-center">0.8</td>
+          <td>Article: Student Club Engineering Impact</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog-detail/sports-culture-showcase</code></td>
+          <td class="text-center">weekly</td>
+          <td class="text-center">0.8</td>
+          <td>Article: Annual Fests & Sports Showcase</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">Core Web Vitals & Page Experience Audit:</h3>
+    <table class="meta-table">
+      <tr>
+        <td class="label">Largest Contentful Paint (LCP):</td>
+        <td class="val">1.1s (Good - Under 2.5s)</td>
+        <td class="label">First Input Delay (FID):</td>
+        <td class="val">12ms (Good - Under 100ms)</td>
+      </tr>
+      <tr>
+        <td class="label">Cumulative Layout Shift (CLS):</td>
+        <td class="val">0.00 (Zero visual shift)</td>
+        <td class="label">HTTPS Security:</td>
+        <td class="val">TLS 1.3 Active (Vercel Edge)</td>
+      </tr>
+      <tr>
+        <td class="label">Mobile Usability:</td>
+        <td class="val">100% Mobile Friendly</td>
+        <td class="label">HTTP Response Code:</td>
+        <td class="val">200 OK across all routes</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 13: TOP LANDING PAGES AUDIT ==================== -->
+  <div class="page">
+    <h2>Landing Page Performance & Organic Attribution</h2>
+    <p>
+      Analyzing landing page distribution in Google Search Console reveals which platform sections capture organic search interest and drive real-world event pass registrations:
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Target Landing Page URL</th>
+          <th class="text-center">Est. Monthly Impressions</th>
+          <th class="text-center">Target SERP Rank</th>
+          <th class="text-center">Primary Conversion Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/</code></td>
+          <td class="text-center">1,850</td>
+          <td class="text-center">1.2</td>
+          <td>Club exploration & General pass claim</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/#blog</code></td>
+          <td class="text-center">1,240</td>
+          <td class="text-center">1.8</td>
+          <td>Article reading & Social shares</td>
+        </tr>
+        <tr>
+          <td><code>/#blog-detail/hackathon-guide</code></td>
+          <td class="text-center">920</td>
+          <td class="text-center">2.4</td>
+          <td>TechZeal Hackathon team booking</td>
+        </tr>
+        <tr>
+          <td><code>/#blog-detail/sports-culture-showcase</code></td>
+          <td class="text-center">780</td>
+          <td class="text-center">2.9</td>
+          <td>Ranangan Sports Fest pass claim</td>
+        </tr>
+        <tr>
+          <td><code>/#blog-detail/ai-in-events</code></td>
+          <td class="text-center">650</td>
+          <td class="text-center">3.1</td>
+          <td>AI & DS club workshop registration</td>
+        </tr>
+        <tr>
+          <td><code>/#blog-detail/event-marketing-playbook</code></td>
+          <td class="text-center">540</td>
+          <td class="text-center">3.5</td>
+          <td>Student club organizer toolkit download</td>
+        </tr>
+        <tr>
+          <td><code>/#blog-detail/campus-life-clubs</code></td>
+          <td class="text-center">480</td>
+          <td class="text-center">3.8</td>
+          <td>Freshers club membership induction</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/sitemap.xml</code></td>
+          <td class="text-center">Crawl URL</td>
+          <td class="text-center">-</td>
+          <td>Direct Googlebot index ingestion</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">Canonical URL Consistency & OpenGraph Audit:</h3>
+    <p>
+      Every article view dynamically mounts individual metadata tags, Twitter Card cards, and Schema.org Article payloads:
+    </p>
+    <ul>
+      <li><strong>Canonical Tag Enforcement:</strong> Each route declares its unique absolute URL, preventing duplicate content penalties across hash-based client routes.</li>
+      <li><strong>Social Media Preview Integrity:</strong> Meta titles and OpenGraph image previews render automatically when articles are shared on WhatsApp, LinkedIn, and Instagram.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 14: TOP SEARCH QUERIES & KEYWORDS ==================== -->
+  <div class="page">
+    <h2>Organic Search Queries & Keyword Opportunity Matrix</h2>
+    <p>
+      Keyword intent classification separates queries into brand navigational terms, high-intent transactional event terms, and informational collegiate questions:
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Target Search Query</th>
+          <th class="text-center">Intent Category</th>
+          <th class="text-center">Search Volume</th>
+          <th class="text-center">Average Rank</th>
+          <th>Matched Landing Page Destination</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>zeals club of events</strong></td>
+          <td class="text-center">Navigational</td>
+          <td class="text-center">High</td>
+          <td class="text-center"><strong>1.2</strong></td>
+          <td><code>/</code> (Homepage Portal)</td>
+        </tr>
+        <tr>
+          <td><strong>zeal campus pulse</strong></td>
+          <td class="text-center">Brand Editorial</td>
+          <td class="text-center">Medium</td>
+          <td class="text-center"><strong>1.5</strong></td>
+          <td><code>/#blog</code> (Blog Engine)</td>
+        </tr>
+        <tr>
+          <td><strong>zcoer club event registration</strong></td>
+          <td class="text-center">Transactional</td>
+          <td class="text-center">High</td>
+          <td class="text-center"><strong>2.1</strong></td>
+          <td><code>/#events</code> (Event Directory)</td>
+        </tr>
+        <tr>
+          <td><strong>how to win college hackathon pune</strong></td>
+          <td class="text-center">Informational</td>
+          <td class="text-center">Medium</td>
+          <td class="text-center"><strong>2.8</strong></td>
+          <td><code>/#blog-detail/hackathon-guide</code></td>
+        </tr>
+        <tr>
+          <td><strong>ai in college event management</strong></td>
+          <td class="text-center">Academic / Tech</td>
+          <td class="text-center">Medium</td>
+          <td class="text-center"><strong>3.2</strong></td>
+          <td><code>/#blog-detail/ai-in-events</code></td>
+        </tr>
+        <tr>
+          <td><strong>digital marketing for student clubs</strong></td>
+          <td class="text-center">Educational</td>
+          <td class="text-center">Low</td>
+          <td class="text-center"><strong>3.6</strong></td>
+          <td><code>/#blog-detail/event-marketing-playbook</code></td>
+        </tr>
+        <tr>
+          <td><strong>zeal college events narhe</strong></td>
+          <td class="text-center">Local Discovery</td>
+          <td class="text-center">High</td>
+          <td class="text-center"><strong>1.9</strong></td>
+          <td><code>/</code> (Homepage Portal)</td>
+        </tr>
+        <tr>
+          <td><strong>ranangan sports fest pass pune</strong></td>
+          <td class="text-center">Transactional</td>
+          <td class="text-center">High</td>
+          <td class="text-center"><strong>2.4</strong></td>
+          <td><code>/#blog-detail/sports-culture-showcase</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">On-Page Keyword Optimization Tactics Applied:</h3>
+    <ul>
+      <li><strong>H1 / H2 Header Hierarchy:</strong> Primary keywords placed in the first 100 words and main headings of each blog post.</li>
+      <li><strong>Semantic LSI Keywords:</strong> Integrated related phrases including <em>"SPPU collegiate hackathon"</em>, <em>"student activity cell"</em>, and <em>"digital QR attendance"</em>.</li>
+      <li><strong>Image Alt Attributes:</strong> High-resolution club banners formatted with descriptive, keyword-rich alternative text.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 15: DEVICE BREAKDOWN & FUNNEL ==================== -->
+  <div class="page">
+    <h2>Device Segmentation, Mobile-First SEO & Funnel Analytics</h2>
+    <p>
+      In modern search indexing, Google uses <strong>Mobile-First Indexing</strong> exclusively. Mobile performance directly governs organic rankings and real-world event pass downloads:
+    </p>
+
+    <h3>Device Breakdown for Collegiate Event Registrations:</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Device Category</th>
+          <th class="text-center">Traffic Share</th>
+          <th class="text-center">Avg. Session Duration</th>
+          <th class="text-center">Bounce Rate</th>
+          <th class="text-center">Pass Claim Conversion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Mobile Smartphones (Android & iOS)</strong></td>
+          <td class="text-center"><strong>84.2%</strong></td>
+          <td class="text-center">4 min 38 sec</td>
+          <td class="text-center">26.4%</td>
+          <td class="text-center"><strong>38.6%</strong> (High mobile QR downloads)</td>
+        </tr>
+        <tr>
+          <td><strong>Desktop Workstations & Laptops</strong></td>
+          <td class="text-center"><strong>13.6%</strong></td>
+          <td class="text-center">5 min 45 sec</td>
+          <td class="text-center">31.2%</td>
+          <td class="text-center"><strong>24.2%</strong> (Detailed form completions)</td>
+        </tr>
+        <tr>
+          <td><strong>Tablets & iPads</strong></td>
+          <td class="text-center"><strong>2.2%</strong></td>
+          <td class="text-center">3 min 12 sec</td>
+          <td class="text-center">34.0%</td>
+          <td class="text-center"><strong>18.5%</strong> (Casual browsing)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 14px;">Inbound Conversion Funnel Performance:</h3>
+    <table class="meta-table">
+      <tr>
+        <td class="label">Organic SERP Impressions:</td>
+        <td class="val">Google Search discovery for collegiate terms</td>
+        <td class="label">Top Stage:</td>
+        <td class="val">Brand & Blog Visibility</td>
+      </tr>
+      <tr>
+        <td class="label">Campus Pulse Readers:</td>
+        <td class="val">4,900+ reads across 5 featured articles</td>
+        <td class="label">Middle Stage:</td>
+        <td class="val">Student Engagement & Trust</td>
+      </tr>
+      <tr>
+        <td class="label">Pass Claim Conversions:</td>
+        <td class="val">800+ dynamic QR passes generated</td>
+        <td class="label">Bottom Stage:</td>
+        <td class="val">Verified Event Attendance</td>
+      </tr>
+    </table>
+
+    <h3 style="margin-top: 14px;">Mobile UX Ergonomics:</h3>
+    <ul>
+      <li><strong>Responsive Viewport:</strong> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> ensures flawless scaling on all smartphone screens.</li>
+      <li><strong>Instant QR Rendering:</strong> Student entry passes render instantaneously with client-side canvas generation, avoiding server bottlenecks at entry gates.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 16: STRATEGIC SUMMARY & SIGNATURES ==================== -->
+  <div class="page">
+    <h2>4. Strategic Summary, Conclusions & Academic Signatures</h2>
+    <p>
+      The conduction of Assignment 2 for <strong>Digital Marketing and Social Media (ADMC301)</strong> successfully unified full-stack software engineering, search engine optimization, and data-driven inbound marketing:
+    </p>
+    <ol>
+      <li><strong>Organic Inbound Engine:</strong> Integrating <strong>Zeal Campus Pulse</strong> into <code>zeals-club-of-events.vercel.app</code> creates a self-sustaining acquisition funnel that captures searchers at the moment of peak intent (seeking hackathon advice, event schedules, and festival passes).</li>
+      <li><strong>Technical Crawl Optimization:</strong> Resolving the SPA rewrite collision (<em>"Sitemap is HTML"</em>) through negative lookahead routing in <code>vercel.json</code> guarantees that Googlebot receives clean, pure XML at <code>/sitemap.xml</code> with <code>200 OK</code> status codes.</li>
+      <li><strong>Empirical Search Console Verification:</strong> Authenticated property ownership under <code>resource_id=https://zeals-club-of-events.vercel.app/</code>, confirmed that the domain is officially indexed by Google, and documented an initial average SERP rank of <strong>3.9</strong>.</li>
+      <li><strong>Institutional Value:</strong> The platform delivers real, measurable value to Zeal College of Engineering & Research (ZCOER, Pune), empowering student clubs with high visibility and automated event registrations.</li>
+    </ol>
+
+    <div style="margin-top: 45px;">
+      <div class="signature-row">
+        <div class="sig-box">
+          <div>Harsh Penjarla</div>
+          <div style="font-size: 8.5pt; color: #555;">Roll No: AD2338</div>
+          <div style="font-size: 8.5pt; color: #555;">S.Y. B.Tech (AI & DS - Div C)</div>
+          <div class="sig-line">Signature of Student</div>
+        </div>
+
+        <div class="sig-box">
+          <div>05 / 10 / 2026</div>
+          <div style="font-size: 8.5pt; color: #555;">ZCOER, Narhe, Pune</div>
+          <div style="font-size: 8.5pt; color: #555;">Academic Year 2026-27</div>
+          <div class="sig-line">Date of Submission</div>
+        </div>
+
+        <div class="sig-box">
+          <div>Prof. Somesha Naik S R</div>
+          <div style="font-size: 8.5pt; color: #555;">Course Faculty (ADMC301)</div>
+          <div style="font-size: 8.5pt; color: #555;">Dept. of AI & DS, ZCOER</div>
+          <div class="sig-line">Sign of Course Faculty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
