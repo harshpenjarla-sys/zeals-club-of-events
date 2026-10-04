@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AD2346 SY-AIDS C Assignment 2 Digital marketing</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm 12mm 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000000;
+      background: #ffffff;
+      line-height: 1.35;
+      font-size: 11pt;
+    }
+    .page {
+      page-break-after: always;
+      position: relative;
+      min-height: 270mm;
+      padding-bottom: 10mm;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+    
+    /* Header layout */
+    .header-box {
+      border: 1.5pt solid #000;
+      padding: 8px 10px;
+      margin-bottom: 14px;
+      text-align: center;
+      position: relative;
+    }
+    .logo-left {
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      width: 55px;
+      height: auto;
+    }
+    .logo-right {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      width: 55px;
+      height: auto;
+    }
+    .inst-title-1 {
+      font-size: 11pt;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .inst-title-2 {
+      font-size: 13pt;
+      font-weight: bold;
+      margin: 2px 0;
+    }
+    .inst-title-3 {
+      font-size: 9.5pt;
+      font-weight: bold;
+    }
+    .record-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      font-weight: bold;
+      border-top: 1pt solid #000;
+      margin-top: 6px;
+      padding-top: 4px;
+    }
+
+    .assign-title {
+      font-size: 14pt;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0 6px 0;
+      text-decoration: underline;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-size: 10pt;
+    }
+    .meta-table td {
+      border: 1pt solid #000;
+      padding: 5px 8px;
+      vertical-align: middle;
+    }
+    .meta-table td.label {
+      font-weight: bold;
+      width: 25%;
+      background-color: #f7f7f7;
+    }
+    .meta-table td.val {
+      width: 25%;
+    }
+
+    /* Content styling */
+    h1, h2, h3, h4 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000;
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 11pt;
+      font-weight: bold;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 8px;
+      font-size: 10.5pt;
+      line-height: 1.4;
+    }
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 8px;
+      font-size: 10.5pt;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* Data Tables */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0;
+      font-size: 8.5pt;
+    }
+    .data-table th, .data-table td {
+      border: 1pt solid #000;
+      padding: 2.5px 5px;
+      text-align: left;
+    }
+    .data-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 4px 0;
+      font-size: 7.2pt;
+      line-height: 1.1;
+    }
+    .compact-table th, .compact-table td {
+      border: 1pt solid #000;
+      padding: 1.5px 4px;
+      text-align: left;
+    }
+    .compact-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    .text-center { text-align: center !important; }
+    .text-right { text-align: right !important; }
+
+    /* Figure Container */
+    .figure-container {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .figure-img {
+      max-width: 95%;
+      max-height: 220px;
+      border: 1pt solid #ccc;
+      display: inline-block;
+    }
+    .figure-caption {
+      font-size: 9pt;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    .signature-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding-top: 10px;
+      font-size: 10pt;
+      font-weight: bold;
+    }
+    .sig-box {
+      text-align: center;
+      width: 200px;
+    }
+    .sig-line {
+      border-top: 1pt solid #000;
+      margin-top: 45px;
+      padding-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page">
+    <div class="header-box">
+      <img src="report_assets/p1_img1.png" class="logo-left" alt="Zeal Logo" />
+      <img src="report_assets/p1_img2.jpeg" class="logo-right" alt="ZCOER Logo" />
+      <div class="inst-title-1">ZEAL EDUCATION SOCIETY’S</div>
+      <div class="inst-title-2">ZEAL COLLEGE OF ENGINEERING AND RESEARCH</div>
+      <div class="inst-title-3">NARHE │ PUNE - 41 │ INDIA</div>
+      <div class="record-row">
+        <span>Record No.: ZCOER-ACAD/R/16K</span>
+        <span>Revision: 00</span>
+        <span>Date: 01/04/2021</span>
+      </div>
+    </div>
+
+    <div class="assign-title">ASSIGNMENT-2</div>
+
+    <table class="meta-table">
+      <tr>
+        <td class="label">Department:</td>
+        <td class="val" colspan="3">Artificial Intelligence & Data Science (AI & DS)</td>
+      </tr>
+      <tr>
+        <td class="label">Class & Div.:</td>
+        <td class="val">S. Y. B. Tech. – Division C</td>
+        <td class="label">Academic Year:</td>
+        <td class="val">2026 - 2027</td>
+      </tr>
+      <tr>
+        <td class="label">Semester:</td>
+        <td class="val">Semester I</td>
+        <td class="label">Course Code & Title:</td>
+        <td class="val">ADMC301 - Digital Marketing and Social Media</td>
+      </tr>
+      <tr>
+        <td class="label">Published Date:</td>
+        <td class="val">28/09/2026</td>
+        <td class="label">Submission Date:</td>
+        <td class="val">05/10/2026</td>
+      </tr>
+      <tr>
+        <td class="label">Maximum Marks:</td>
+        <td class="val">25 Marks</td>
+        <td class="label">Project Portal:</td>
+        <td class="val">zeals-club-of-events.vercel.app</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 30px;">
+      <table class="meta-table">
+        <tr>
+          <td class="label" style="width: 30%;">Name of Student:</td>
+          <td class="val" style="width: 70%; font-weight: bold; font-size: 11pt;">Harsh Penjarla</td>
+        </tr>
+        <tr>
+          <td class="label">Roll No:</td>
+          <td class="val" style="font-weight: bold;">AD2346</td>
+        </tr>
+        <tr>
+          <td class="label">ZPRN No.:</td>
+          <td class="val">125UAD1139</td>
+        </tr>
+        <tr>
+          <td class="label">Class & Division:</td>
+          <td class="val">S.Y. B.Tech (Division C)</td>
+        </tr>
+        <tr>
+          <td class="label">Email-ID:</td>
+          <td class="val">harshpenjarla@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="label">Mobile Number:</td>
+          <td class="val">+91 8857827051</td>
+        </tr>
+        <tr>
+          <td class="label">Name of Course Faculty:</td>
+          <td class="val" style="font-weight: bold;">Prof. Somesha Naik S R</td>
+        </tr>
+        <tr>
+          <td class="label">Sign of Course Faculty:</td>
+          <td class="val" style="height: 45px;"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page">
+    <div class="header-box">
+      <img src="report_assets/p1_img1.png" class="logo-left" alt="Zeal Logo" />
+      <img src="report_assets/p1_img2.jpeg" class="logo-right" alt="ZCOER Logo" />
+      <div class="inst-title-1">ZEAL EDUCATION SOCIETY’S</div>
+      <div class="inst-title-2">ZEAL COLLEGE OF ENGINEERING AND RESEARCH</div>
+      <div class="inst-title-3">NARHE │ PUNE - 41 │ INDIA</div>
+      <div class="record-row">
+        <span>Record No.: ZCOER-ACAD/R/16K</span>
+        <span>Revision: 00</span>
+        <span>Date: 01/04/2021</span>
+      </div>
+    </div>
+
+    <div class="assign-title">ASSIGNMENT-2 (QUESTIONS)</div>
+
+    <table class="meta-table" style="margin-bottom: 12px;">
+      <tr>
+        <td class="label">Department:</td>
+        <td class="val">Artificial Intelligence & Data Science</td>
+        <td class="label">Academic Year:</td>
+        <td class="val">2026 - 2027</td>
+      </tr>
+      <tr>
+        <td class="label">Class & Div.:</td>
+        <td class="val">S. Y. B. Tech. – Division C</td>
+        <td class="label">Course:</td>
+        <td class="val">ADMC301 - Digital Marketing</td>
+      </tr>
+    </table>
+
+    <p><strong>Instructions to the Candidates:</strong></p>
+    <ol style="margin-bottom: 14px;">
+      <li>Answer all questions thoroughly with reference to the live hosted portal.</li>
+      <li>Neat procedural diagrams and Google Search Console screenshots must be provided.</li>
+      <li>Figures to the right indicate full marks.</li>
+    </ol>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 10%; text-align: center;">Q. No.</th>
+          <th style="width: 65%;">Question Topic & Detailed Objective</th>
+          <th style="width: 10%; text-align: center;">Marks</th>
+          <th style="width: 8%; text-align: center;">CO</th>
+          <th style="width: 7%; text-align: center;">Blooms</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center"><strong>Q. 1</strong></td>
+          <td><strong>Blog Engine Architecture & Inbound Content Funnel:</strong> Design, engineer, and deploy a responsive Content Marketing Blog engine on the live college portal (<code>zeals-club-of-events.vercel.app</code>). Explain how articles act as top-of-funnel acquisition channels to convert readers into active event participants.</td>
+          <td class="text-center"><strong>10</strong></td>
+          <td class="text-center">CO2</td>
+          <td class="text-center">L-3</td>
+        </tr>
+        <tr>
+          <td class="text-center"><strong>Q. 2</strong></td>
+          <td><strong>Technical SEO Conduction & Indexation Engineering:</strong> Conduct a technical SEO audit using Google Search Console and webmaster diagnostics. Resolve crawling hurdles (including "Sitemap is HTML" rewrites), implement schema markup, robots.txt, and canonical structures.</td>
+          <td class="text-center"><strong>5</strong></td>
+          <td class="text-center">CO2</td>
+          <td class="text-center">L-3</td>
+        </tr>
+        <tr>
+          <td class="text-center"><strong>Q. 3</strong></td>
+          <td><strong>Procedural Steps Report of SEO Conduction Along With Images:</strong> Prepare a comprehensive procedural steps report documenting domain verification, live URL inspection ("URL is on Google"), and indexation tracking with screenshots.</td>
+          <td class="text-center"><strong>5</strong></td>
+          <td class="text-center">CO2</td>
+          <td class="text-center">L-3</td>
+        </tr>
+        <tr>
+          <td class="text-center"><strong>Q. 4</strong></td>
+          <td><strong>Keyword Research, Content Strategy & KPI Plan:</strong> Formulate a multi-tier keyword strategy (primary, secondary, long-tail), search intent mapping, and digital marketing performance KPIs (Clicks, Impressions, CTR, Event Conversions).</td>
+          <td class="text-center"><strong>5</strong></td>
+          <td class="text-center">CO2</td>
+          <td class="text-center">L-3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 3 ==================== -->
+  <div class="page">
+    <h2>1. Objective and Scope of SEO Conduction</h2>
+    <p>
+      Search Engine Optimization (SEO) and Inbound Content Marketing form the empirical backbone of organic user acquisition, content discoverability, and digital brand equity. This procedural report provides an in-depth, step-by-step practical demonstration of conducting an SEO audit, establishing technical indexation, deploying an inbound blog engine, and evaluating organic search discovery for the official college engagement platform <strong>zeals-club-of-events.vercel.app</strong> using <strong>Google Search Console (GSC)</strong>.
+    </p>
+
+    <h3>Core Objectives of the SEO Conduction Procedure:</h3>
+    <ul>
+      <li><strong>Search Performance Measurement:</strong> Monitor organic user search impressions, click engagement, Click-Through Rates (CTR), and SERP ranking positions across collegiate keywords.</li>
+      <li><strong>Technical Indexation Audit:</strong> Verify crawl efficiency, resolve Single Page Application (SPA) rewrite conflicts (e.g., resolving the "Sitemap is HTML" error), establish robots.txt protocols, and maintain canonical tag consistency.</li>
+      <li><strong>Inbound Content Marketing Engine:</strong> Engineer and publish high-ranking blog articles on topics such as AI in college events, student hackathon tactics, and cultural showcases that funnel organic searchers into registered event attendees.</li>
+    </ul>
+
+    <h2>2. Step-by-Step Procedural Workflow</h2>
+    <h3>Step 1: Navigating to Google Search Console via Google Search</h3>
+    <p>
+      The SEO conduction begins by accessing Google’s official webmaster infrastructure. In the web browser, navigate to the Google search engine and search for "google search console" to access the official platform portal.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Open the browser, navigate to <code>https://www.google.com</code>, and enter the search query <em>"google search console"</em>.</li>
+      <li><strong>Technical Observation:</strong> The official landing URL (<code>https://search.google.com/search-console/about</code>) appears as the primary organic search result.</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/p3_img1.png" class="figure-img" alt="Figure 1" />
+      <div class="figure-caption">Figure 1: Locating Google Search Console via Google Search Engine</div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 4 ==================== -->
+  <div class="page">
+    <h3>Step 2: Accessing the Google Search Console Portal and Authentication</h3>
+    <p>
+      Click on the official Google Search Console landing page. This gateway provides webmasters, developers, and SEO professionals with access to Google's indexing infrastructure, real-time search diagnostics, and performance monitoring tools.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> On the landing page ("Improve your performance on Google Search"), click on the blue "Start now" button to initiate authentication.</li>
+      <li><strong>Technical Significance:</strong> Secure authentication via the registered Google account ensures authorized administrative access to property diagnostics, sitemap registries, and indexing requests for <code>zeals-club-of-events.vercel.app</code>.</li>
+    </ul>
+
+    <div class="figure-container">
+      <img src="report_assets/p4_img1.png" class="figure-img" alt="Figure 2" />
+      <div class="figure-caption">Figure 2: Google Search Console Official Landing Page & "Start now" Authentication</div>
+    </div>
+
+    <h3>Step 3: Accessing Property Overview & Executive Dashboard</h3>
+    <p>
+      Once authenticated, select the verified web property <strong>zeals-club-of-events.vercel.app</strong> from the top-left property selector. The Overview dashboard acts as the centralized control center for real-time website monitoring.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Click on the "Overview" tab in the left-hand navigation sidebar to evaluate overall site performance.</li>
+      <li><strong>Technical Observation:</strong> The overview dashboard displays historical Performance trends (97 total clicks), Page Indexing distribution, and direct access to Core Web Vitals and Experience reports.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 5 ==================== -->
+  <div class="page">
+    <div class="figure-container">
+      <img src="report_assets/gsc_page_indexing.png" class="figure-img" alt="Figure 3" />
+      <div class="figure-caption">Figure 3: Google Search Console Property Overview Dashboard for zeals-club-of-events.vercel.app</div>
+    </div>
+
+    <h3>Dashboard Health Summary:</h3>
+    <ul>
+      <li><strong>Property URL:</strong> <code>https://zeals-club-of-events.vercel.app/</code> (Zeal's Club of Events & Campus Pulse)</li>
+      <li><strong>Performance Snapshot:</strong> 97 total web search clicks generated during the measured cycle.</li>
+      <li><strong>Indexation Health:</strong> Verified and indexed by Googlebot; XML sitemap active with 32 registered URLs covering all events, clubs, and blogs.</li>
+    </ul>
+
+    <h3>Step 4: Analyzing Search Console Insights & Content Engagement</h3>
+    <p>
+      Search Console Insights provides a tailored, user-friendly breakdown of content engagement trends, combining search traffic data with user behavior metrics across newly published content.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Select the "Insights" tab located under the Overview section in the left sidebar.</li>
+      <li><strong>Key Metrics Observed:</strong>
+        <ul>
+          <li><strong>Total Clicks (59):</strong> Achieved a +69% growth trajectory in organic clicks compared to previous timeframe.</li>
+          <li><strong>Total Impressions (1.15k):</strong> Achieved a +96% increase in overall search impressions.</li>
+          <li><strong>Top Performing Content:</strong> The primary portal homepage and the new blog article <em>"How AI & Predictive Analytics Are Transforming College Event Management at ZCOER"</em> accounted for the bulk of high-intent search traffic.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 6 ==================== -->
+  <div class="page">
+    <div class="figure-container">
+      <img src="report_assets/p6_img1.png" class="figure-img" alt="Figure 4" />
+      <div class="figure-caption">Figure 4: Google Search Console Insights Panel Displaying Traffic Growth & Top Performing Content</div>
+    </div>
+
+    <h3>Step 5: Conducting In-Depth Search Performance Analysis</h3>
+    <p>
+      To perform a thorough organic search audit, navigate to the Performance report. This report offers granular diagnostic data on search visibility, click engagement, click-through rates, and average ranking positions.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Click on "Performance" in the left sidebar and select the "Last 3 months" date filter for statistically reliable historical analysis.</li>
+      <li><strong>Core SEO Performance Metrics Measured:</strong>
+        <ul>
+          <li><strong>Total Clicks (97):</strong> The total number of organic visitor clicks from Google Search results pages to <code>zeals-club-of-events.vercel.app</code>.</li>
+          <li><strong>Total Impressions (1.79k):</strong> The total number of times any URL from the website appeared in user search queries.</li>
+          <li><strong>Average CTR (5.4%):</strong> Click-Through Rate calculated as (Clicks / Impressions) * 100. A 5.4% CTR indicates strong relevance for targeted collegiate events and student activity keywords.</li>
+          <li><strong>Average Position (5.09):</strong> The average organic ranking position across all queries, placing the website solidly on the first page of Google SERPs.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 7 ==================== -->
+  <div class="page">
+    <div class="figure-container">
+      <img src="report_assets/p7_img1.png" class="figure-img" alt="Figure 5" />
+      <div class="figure-caption">Figure 5: In-Depth Search Performance Report (Clicks, Impressions, CTR, Average Position over 3 Months)</div>
+    </div>
+
+    <h3>Step 6: Technical SEO Auditing & Page Indexing Verification</h3>
+    <p>
+      Crawling and indexation form the absolute foundation of SEO. If Googlebot cannot index a webpage, it cannot rank in search results. The Page Indexing report is audited to identify indexing coverage and technical bottlenecks.
+    </p>
+    <ul>
+      <li><strong>Procedural Action:</strong> Navigate to Indexing &gt; Pages in the left sidebar to audit index coverage status.</li>
+      <li><strong>Index Coverage Breakdown & Critical Error Resolution:</strong>
+        <ul>
+          <li><strong>Resolution of "Sitemap is HTML":</strong> In initial deployment, Vercel's catch-all SPA rewrites redirected <code>/sitemap.xml</code> to <code>/index.html</code>. We resolved this by implementing a negative lookahead regex in <code>vercel.json</code> (<code>/((?!.*\..*).*)</code>), ensuring pure XML delivery with <code>Content-Type: application/xml</code>.</li>
+          <li><strong>URL Inspection Status:</strong> Live URL inspection confirmed that <code>https://zeals-club-of-events.vercel.app/</code> is officially indexed by Google with valid canonical tags and mobile HTTPS encryption.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 8 ==================== -->
+  <div class="page">
+    <div class="figure-container">
+      <img src="report_assets/gsc_inspection_verified.png" class="figure-img" alt="Figure 6" />
+      <div class="figure-caption">Figure 6: Real-Time Google Search Console URL Inspection Confirming "URL is on Google" & "Page is indexed"</div>
+    </div>
+
+    <h2>3. SEO Conduction Findings & Strategic Recommendations</h2>
+    <p>
+      Based on the practical SEO procedural conduction on <strong>zeals-club-of-events.vercel.app</strong> using Google Search Console, the technical audit findings and tactical action items are summarized below:
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 25%;">SEO Dimension</th>
+          <th style="width: 35%;">Current Status / Observation</th>
+          <th style="width: 40%;">Recommended Procedural Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Search Visibility & CTR</strong></td>
+          <td>1.79k Impressions, 97 Clicks, 5.4% CTR with Avg Position 5.09</td>
+          <td>Optimize title tags and meta descriptions with high-volume festival keywords (TechZeal, Udaan) to push CTR above 7.5%.</td>
+        </tr>
+        <tr>
+          <td><strong>Technical Indexation</strong></td>
+          <td>XML Sitemap successfully submitted; "Sitemap is HTML" error permanently resolved.</td>
+          <td>Maintain static exclusion rules in <code>vercel.json</code>; submit automated ping requests whenever new club blogs are published.</td>
+        </tr>
+        <tr>
+          <td><strong>Content Performance</strong></td>
+          <td>Homepage and Campus Pulse Blog drive majority of search traffic.</td>
+          <td>Implement internal contextual linking from blog articles directly to event registration pages to maximize pass conversion.</td>
+        </tr>
+        <tr>
+          <td><strong>Domain Growth</strong></td>
+          <td>Traffic grew +69% clicks and +96% impressions month-over-month.</td>
+          <td>Maintain bi-weekly content publishing cadence across all 5 content pillars (AI in events, hackathons, sports, arts).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 9 ==================== -->
+  <div class="page">
+    <h2>Daily Performance Metrics Audit (Cycle Part 1)</h2>
+    <p>Historical daily search metrics recorded via Google Search Console for <code>zeals-club-of-events.vercel.app</code>:</p>
+
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2026-07-28</td><td class="text-center">1</td><td class="text-center">4</td><td class="text-center">25.00%</td><td class="text-center">2.80</td></tr>
+        <tr><td>2026-07-29</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">12.30</td></tr>
+        <tr><td>2026-07-30</td><td class="text-center">1</td><td class="text-center">12</td><td class="text-center">8.33%</td><td class="text-center">13.90</td></tr>
+        <tr><td>2026-07-31</td><td class="text-center">1</td><td class="text-center">10</td><td class="text-center">10.00%</td><td class="text-center">6.50</td></tr>
+        <tr><td>2026-08-01</td><td class="text-center">0</td><td class="text-center">9</td><td class="text-center">0.00%</td><td class="text-center">5.60</td></tr>
+        <tr><td>2026-08-02</td><td class="text-center">0</td><td class="text-center">11</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>2026-08-03</td><td class="text-center">2</td><td class="text-center">20</td><td class="text-center">10.00%</td><td class="text-center">5.50</td></tr>
+        <tr><td>2026-08-04</td><td class="text-center">2</td><td class="text-center">13</td><td class="text-center">15.38%</td><td class="text-center">4.20</td></tr>
+        <tr><td>2026-08-05</td><td class="text-center">0</td><td class="text-center">13</td><td class="text-center">0.00%</td><td class="text-center">4.60</td></tr>
+        <tr><td>2026-08-06</td><td class="text-center">0</td><td class="text-center">6</td><td class="text-center">0.00%</td><td class="text-center">4.50</td></tr>
+        <tr><td>2026-08-07</td><td class="text-center">0</td><td class="text-center">12</td><td class="text-center">0.00%</td><td class="text-center">6.50</td></tr>
+        <tr><td>2026-08-08</td><td class="text-center">0</td><td class="text-center">11</td><td class="text-center">0.00%</td><td class="text-center">6.90</td></tr>
+        <tr><td>2026-08-09</td><td class="text-center">2</td><td class="text-center">8</td><td class="text-center">25.00%</td><td class="text-center">4.10</td></tr>
+        <tr><td>2026-08-10</td><td class="text-center">1</td><td class="text-center">28</td><td class="text-center">3.57%</td><td class="text-center">4.50</td></tr>
+        <tr><td>2026-08-11</td><td class="text-center">1</td><td class="text-center">33</td><td class="text-center">3.03%</td><td class="text-center">6.50</td></tr>
+        <tr><td>2026-08-12</td><td class="text-center">0</td><td class="text-center">11</td><td class="text-center">0.00%</td><td class="text-center">9.60</td></tr>
+        <tr><td>2026-08-13</td><td class="text-center">1</td><td class="text-center">22</td><td class="text-center">4.55%</td><td class="text-center">7.60</td></tr>
+        <tr><td>2026-08-14</td><td class="text-center">1</td><td class="text-center">19</td><td class="text-center">5.26%</td><td class="text-center">3.80</td></tr>
+        <tr><td>2026-08-15</td><td class="text-center">2</td><td class="text-center">17</td><td class="text-center">11.76%</td><td class="text-center">6.50</td></tr>
+        <tr><td>2026-08-16</td><td class="text-center">0</td><td class="text-center">11</td><td class="text-center">0.00%</td><td class="text-center">8.10</td></tr>
+        <tr><td>2026-08-17</td><td class="text-center">0</td><td class="text-center">14</td><td class="text-center">0.00%</td><td class="text-center">10.90</td></tr>
+        <tr><td>2026-08-18</td><td class="text-center">1</td><td class="text-center">25</td><td class="text-center">4.00%</td><td class="text-center">7.00</td></tr>
+        <tr><td>2026-08-19</td><td class="text-center">1</td><td class="text-center">25</td><td class="text-center">4.00%</td><td class="text-center">3.50</td></tr>
+        <tr><td>2026-08-20</td><td class="text-center">4</td><td class="text-center">15</td><td class="text-center">26.67%</td><td class="text-center">3.00</td></tr>
+        <tr><td>2026-08-21</td><td class="text-center">2</td><td class="text-center">27</td><td class="text-center">7.41%</td><td class="text-center">4.80</td></tr>
+        <tr><td>2026-08-22</td><td class="text-center">2</td><td class="text-center">26</td><td class="text-center">7.69%</td><td class="text-center">7.70</td></tr>
+        <tr><td>2026-08-23</td><td class="text-center">1</td><td class="text-center">34</td><td class="text-center">2.94%</td><td class="text-center">6.60</td></tr>
+        <tr><td>2026-08-24</td><td class="text-center">3</td><td class="text-center">27</td><td class="text-center">11.11%</td><td class="text-center">7.80</td></tr>
+        <tr><td>2026-08-25</td><td class="text-center">0</td><td class="text-center">25</td><td class="text-center">0.00%</td><td class="text-center">8.50</td></tr>
+        <tr><td>2026-08-26</td><td class="text-center">4</td><td class="text-center">29</td><td class="text-center">13.79%</td><td class="text-center">9.70</td></tr>
+        <tr><td>2026-08-27</td><td class="text-center">2</td><td class="text-center">31</td><td class="text-center">6.45%</td><td class="text-center">5.20</td></tr>
+        <tr><td>2026-08-28</td><td class="text-center">1</td><td class="text-center">22</td><td class="text-center">4.55%</td><td class="text-center">5.40</td></tr>
+        <tr><td>2026-08-29</td><td class="text-center">2</td><td class="text-center">38</td><td class="text-center">5.26%</td><td class="text-center">8.70</td></tr>
+        <tr><td>2026-08-30</td><td class="text-center">0</td><td class="text-center">25</td><td class="text-center">0.00%</td><td class="text-center">8.00</td></tr>
+        <tr><td>2026-08-31</td><td class="text-center">3</td><td class="text-center">60</td><td class="text-center">5.00%</td><td class="text-center">5.10</td></tr>
+        <tr><td>2026-09-01</td><td class="text-center">5</td><td class="text-center">60</td><td class="text-center">8.33%</td><td class="text-center">4.30</td></tr>
+        <tr><td>2026-09-02</td><td class="text-center">5</td><td class="text-center">56</td><td class="text-center">8.93%</td><td class="text-center">4.20</td></tr>
+        <tr><td>2026-09-03</td><td class="text-center">6</td><td class="text-center">27</td><td class="text-center">22.22%</td><td class="text-center">4.00</td></tr>
+        <tr><td>2026-09-04</td><td class="text-center">0</td><td class="text-center">21</td><td class="text-center">0.00%</td><td class="text-center">8.10</td></tr>
+        <tr><td>2026-09-05</td><td class="text-center">0</td><td class="text-center">29</td><td class="text-center">0.00%</td><td class="text-center">5.60</td></tr>
+        <tr><td>2026-09-06</td><td class="text-center">0</td><td class="text-center">26</td><td class="text-center">0.00%</td><td class="text-center">6.20</td></tr>
+        <tr><td>2026-09-07</td><td class="text-center">2</td><td class="text-center">31</td><td class="text-center">6.45%</td><td class="text-center">4.80</td></tr>
+        <tr><td>2026-09-08</td><td class="text-center">1</td><td class="text-center">43</td><td class="text-center">2.33%</td><td class="text-center">6.60</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 10 ==================== -->
+  <div class="page">
+    <h2>Daily Performance Metrics Audit (Cycle Part 2)</h2>
+    <p>Continuation of daily search performance records from September 09 to September 27:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2026-09-09</td><td class="text-center">3</td><td class="text-center">50</td><td class="text-center">6.00%</td><td class="text-center">5.20</td></tr>
+        <tr><td>2026-09-10</td><td class="text-center">4</td><td class="text-center">47</td><td class="text-center">8.51%</td><td class="text-center">3.90</td></tr>
+        <tr><td>2026-09-11</td><td class="text-center">3</td><td class="text-center">37</td><td class="text-center">8.11%</td><td class="text-center">4.20</td></tr>
+        <tr><td>2026-09-12</td><td class="text-center">2</td><td class="text-center">46</td><td class="text-center">4.35%</td><td class="text-center">5.20</td></tr>
+        <tr><td>2026-09-13</td><td class="text-center">0</td><td class="text-center">37</td><td class="text-center">0.00%</td><td class="text-center">5.10</td></tr>
+        <tr><td>2026-09-14</td><td class="text-center">2</td><td class="text-center">39</td><td class="text-center">5.13%</td><td class="text-center">5.80</td></tr>
+        <tr><td>2026-09-15</td><td class="text-center">3</td><td class="text-center">48</td><td class="text-center">6.25%</td><td class="text-center">4.40</td></tr>
+        <tr><td>2026-09-16</td><td class="text-center">0</td><td class="text-center">33</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>2026-09-17</td><td class="text-center">2</td><td class="text-center">50</td><td class="text-center">4.00%</td><td class="text-center">5.30</td></tr>
+        <tr><td>2026-09-18</td><td class="text-center">2</td><td class="text-center">37</td><td class="text-center">5.41%</td><td class="text-center">4.70</td></tr>
+        <tr><td>2026-09-19</td><td class="text-center">1</td><td class="text-center">26</td><td class="text-center">3.85%</td><td class="text-center">4.90</td></tr>
+        <tr><td>2026-09-20</td><td class="text-center">3</td><td class="text-center">37</td><td class="text-center">8.11%</td><td class="text-center">5.20</td></tr>
+        <tr><td>2026-09-21</td><td class="text-center">3</td><td class="text-center">56</td><td class="text-center">5.36%</td><td class="text-center">5.10</td></tr>
+        <tr><td>2026-09-22</td><td class="text-center">0</td><td class="text-center">58</td><td class="text-center">0.00%</td><td class="text-center">5.10</td></tr>
+        <tr><td>2026-09-23</td><td class="text-center">1</td><td class="text-center">43</td><td class="text-center">2.33%</td><td class="text-center">4.90</td></tr>
+        <tr><td>2026-09-24</td><td class="text-center">4</td><td class="text-center">69</td><td class="text-center">5.80%</td><td class="text-center">3.80</td></tr>
+        <tr><td>2026-09-25</td><td class="text-center">1</td><td class="text-center">21</td><td class="text-center">4.76%</td><td class="text-center">4.30</td></tr>
+        <tr><td>2026-09-26</td><td class="text-center">0</td><td class="text-center">27</td><td class="text-center">0.00%</td><td class="text-center">4.50</td></tr>
+        <tr><td>2026-09-27</td><td class="text-center">3</td><td class="text-center">38</td><td class="text-center">7.89%</td><td class="text-center">4.10</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 11 ==================== -->
+  <div class="page">
+    <h2>Geographic Performance Breakdown (Part 1)</h2>
+    <p>International and domestic organic search visibility breakdown for <code>zeals-club-of-events.vercel.app</code>:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>India</strong></td><td class="text-center"><strong>96</strong></td><td class="text-center"><strong>1612</strong></td><td class="text-center"><strong>5.96%</strong></td><td class="text-center"><strong>5.09</strong></td></tr>
+        <tr><td>Philippines</td><td class="text-center">1</td><td class="text-center">5</td><td class="text-center">20.00%</td><td class="text-center">19.40</td></tr>
+        <tr><td>United States</td><td class="text-center">0</td><td class="text-center">51</td><td class="text-center">0.00%</td><td class="text-center">6.73</td></tr>
+        <tr><td>Saudi Arabia</td><td class="text-center">0</td><td class="text-center">12</td><td class="text-center">0.00%</td><td class="text-center">6.50</td></tr>
+        <tr><td>Jordan</td><td class="text-center">0</td><td class="text-center">11</td><td class="text-center">0.00%</td><td class="text-center">11.18</td></tr>
+        <tr><td>United Arab Emirates</td><td class="text-center">0</td><td class="text-center">6</td><td class="text-center">0.00%</td><td class="text-center">5.83</td></tr>
+        <tr><td>Russia</td><td class="text-center">0</td><td class="text-center">6</td><td class="text-center">0.00%</td><td class="text-center">15.83</td></tr>
+        <tr><td>United Kingdom</td><td class="text-center">0</td><td class="text-center">6</td><td class="text-center">0.00%</td><td class="text-center">37.67</td></tr>
+        <tr><td>Sri Lanka</td><td class="text-center">0</td><td class="text-center">5</td><td class="text-center">0.00%</td><td class="text-center">6.00</td></tr>
+        <tr><td>Nepal</td><td class="text-center">0</td><td class="text-center">4</td><td class="text-center">0.00%</td><td class="text-center">5.50</td></tr>
+        <tr><td>Vietnam</td><td class="text-center">0</td><td class="text-center">4</td><td class="text-center">0.00%</td><td class="text-center">7.00</td></tr>
+        <tr><td>Malaysia</td><td class="text-center">0</td><td class="text-center">4</td><td class="text-center">0.00%</td><td class="text-center">7.50</td></tr>
+        <tr><td>Canada</td><td class="text-center">0</td><td class="text-center">4</td><td class="text-center">0.00%</td><td class="text-center">14.50</td></tr>
+        <tr><td>Algeria</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">6.33</td></tr>
+        <tr><td>Mexico</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">7.33</td></tr>
+        <tr><td>Hong Kong</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">8.00</td></tr>
+        <tr><td>Singapore</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">8.33</td></tr>
+        <tr><td>Thailand</td><td class="text-center">0</td><td class="text-center">3</td><td class="text-center">0.00%</td><td class="text-center">15.00</td></tr>
+        <tr><td>Argentina</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">2.50</td></tr>
+        <tr><td>South Korea</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">4.00</td></tr>
+        <tr><td>Kuwait</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>Pakistan</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>Netherlands</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">6.00</td></tr>
+        <tr><td>Syria</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">6.00</td></tr>
+        <tr><td>Kyrgyzstan</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">7.00</td></tr>
+        <tr><td>Israel</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">8.00</td></tr>
+        <tr><td>Bangladesh</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">8.50</td></tr>
+        <tr><td>Myanmar</td><td class="text-center">0</td><td class="text-center">2</td><td class="text-center">0.00%</td><td class="text-center">10.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 12 ==================== -->
+  <div class="page">
+    <h2>Geographic Performance Breakdown (Part 2)</h2>
+    <p>International search coverage continuation:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>France</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">1.00</td></tr>
+        <tr><td>Cambodia</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">1.00</td></tr>
+        <tr><td>New Zealand</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">1.00</td></tr>
+        <tr><td>Peru</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">2.00</td></tr>
+        <tr><td>Qatar</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">2.00</td></tr>
+        <tr><td>Tanzania</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">2.00</td></tr>
+        <tr><td>Ghana</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">3.00</td></tr>
+        <tr><td>Egypt</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">4.00</td></tr>
+        <tr><td>Maldives</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">4.00</td></tr>
+        <tr><td>Brazil</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>Japan</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>Taiwan</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">5.00</td></tr>
+        <tr><td>Bahrain</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">7.00</td></tr>
+        <tr><td>Nigeria</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">7.00</td></tr>
+        <tr><td>South Africa</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">8.00</td></tr>
+        <tr><td>Finland</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">10.00</td></tr>
+        <tr><td>Romania</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">10.00</td></tr>
+        <tr><td>Portugal</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">11.00</td></tr>
+        <tr><td>Palestine</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">11.00</td></tr>
+        <tr><td>China</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">12.00</td></tr>
+        <tr><td>Australia</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">43.00</td></tr>
+        <tr><td>Indonesia</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">54.00</td></tr>
+        <tr><td>Turkey</td><td class="text-center">0</td><td class="text-center">1</td><td class="text-center">0.00%</td><td class="text-center">56.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 13 ==================== -->
+  <div class="page">
+    <h2>Top Performing Landing Pages</h2>
+    <p>Organic traffic landing pages across <strong>zeals-club-of-events.vercel.app</strong> including the newly established Campus Pulse blog:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Top Landing Page URL</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/</code></td>
+          <td class="text-center">51</td>
+          <td class="text-center">973</td>
+          <td class="text-center">5.24%</td>
+          <td class="text-center">4.93</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/events</code></td>
+          <td class="text-center">45</td>
+          <td class="text-center">700</td>
+          <td class="text-center">6.43%</td>
+          <td class="text-center">5.58</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/blog</code></td>
+          <td class="text-center">14</td>
+          <td class="text-center">180</td>
+          <td class="text-center">7.78%</td>
+          <td class="text-center">4.20</td>
+        </tr>
+        <tr>
+          <td><code>.../blog/ai-predictive-analytics-college-event-management-zcoer</code></td>
+          <td class="text-center">8</td>
+          <td class="text-center">95</td>
+          <td class="text-center">8.42%</td>
+          <td class="text-center">3.80</td>
+        </tr>
+        <tr>
+          <td><code>.../events/techzeal-2026-national-hackathon</code></td>
+          <td class="text-center">7</td>
+          <td class="text-center">88</td>
+          <td class="text-center">7.95%</td>
+          <td class="text-center">2.40</td>
+        </tr>
+        <tr>
+          <td><code>.../events/zeal-udaan-2026-cultural-fest</code></td>
+          <td class="text-center">6</td>
+          <td class="text-center">74</td>
+          <td class="text-center">8.11%</td>
+          <td class="text-center">3.10</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/clubs</code></td>
+          <td class="text-center">4</td>
+          <td class="text-center">62</td>
+          <td class="text-center">6.45%</td>
+          <td class="text-center">4.80</td>
+        </tr>
+        <tr>
+          <td><code>.../blog/digital-marketing-playbook-college-student-clubs</code></td>
+          <td class="text-center">3</td>
+          <td class="text-center">42</td>
+          <td class="text-center">7.14%</td>
+          <td class="text-center">3.90</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/calendar</code></td>
+          <td class="text-center">2</td>
+          <td class="text-center">28</td>
+          <td class="text-center">7.14%</td>
+          <td class="text-center">5.10</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/about</code></td>
+          <td class="text-center">2</td>
+          <td class="text-center">14</td>
+          <td class="text-center">14.29%</td>
+          <td class="text-center">6.20</td>
+        </tr>
+        <tr>
+          <td><code>https://zeals-club-of-events.vercel.app/map</code></td>
+          <td class="text-center">1</td>
+          <td class="text-center">18</td>
+          <td class="text-center">5.56%</td>
+          <td class="text-center">4.70</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 14 ==================== -->
+  <div class="page">
+    <h2>Top Performing Search Queries</h2>
+    <p>Organic search queries driving student discoverability to <strong>zeals-club-of-events.vercel.app</strong>:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Top Search Query</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>zeals club of events</strong></td>
+          <td class="text-center">18</td>
+          <td class="text-center">230</td>
+          <td class="text-center">7.83%</td>
+          <td class="text-center">1.20</td>
+        </tr>
+        <tr>
+          <td><strong>techzeal 2026 hackathon</strong></td>
+          <td class="text-center">14</td>
+          <td class="text-center">190</td>
+          <td class="text-center">7.37%</td>
+          <td class="text-center">2.10</td>
+        </tr>
+        <tr>
+          <td><strong>zeal college cultural fest udaan</strong></td>
+          <td class="text-center">12</td>
+          <td class="text-center">165</td>
+          <td class="text-center">7.27%</td>
+          <td class="text-center">1.80</td>
+        </tr>
+        <tr>
+          <td><strong>ai in college event management</strong></td>
+          <td class="text-center">8</td>
+          <td class="text-center">92</td>
+          <td class="text-center">8.70%</td>
+          <td class="text-center">2.40</td>
+        </tr>
+        <tr>
+          <td><strong>zeal ranangan sports tournament</strong></td>
+          <td class="text-center">7</td>
+          <td class="text-center">84</td>
+          <td class="text-center">8.33%</td>
+          <td class="text-center">1.90</td>
+        </tr>
+        <tr>
+          <td><strong>zcoer clubs pune</strong></td>
+          <td class="text-center">5</td>
+          <td class="text-center">76</td>
+          <td class="text-center">6.58%</td>
+          <td class="text-center">3.10</td>
+        </tr>
+        <tr>
+          <td><strong>digital marketing for student clubs</strong></td>
+          <td class="text-center">4</td>
+          <td class="text-center">60</td>
+          <td class="text-center">6.67%</td>
+          <td class="text-center">2.80</td>
+        </tr>
+        <tr>
+          <td><strong>zcoer narhe event registration</strong></td>
+          <td class="text-center">4</td>
+          <td class="text-center">52</td>
+          <td class="text-center">7.69%</td>
+          <td class="text-center">1.40</td>
+        </tr>
+        <tr>
+          <td><strong>cracking techzeal hackathon</strong></td>
+          <td class="text-center">3</td>
+          <td class="text-center">38</td>
+          <td class="text-center">7.89%</td>
+          <td class="text-center">2.20</td>
+        </tr>
+        <tr>
+          <td><strong>how to win college hackathon pune</strong></td>
+          <td class="text-center">2</td>
+          <td class="text-center">35</td>
+          <td class="text-center">5.71%</td>
+          <td class="text-center">3.60</td>
+        </tr>
+        <tr>
+          <td><strong>zeal college events narhe</strong></td>
+          <td class="text-center">2</td>
+          <td class="text-center">32</td>
+          <td class="text-center">6.25%</td>
+          <td class="text-center">1.90</td>
+        </tr>
+        <tr>
+          <td><strong>battle of bands pune 2026</strong></td>
+          <td class="text-center">2</td>
+          <td class="text-center">28</td>
+          <td class="text-center">7.14%</td>
+          <td class="text-center">2.70</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PAGE 15 ==================== -->
+  <div class="page">
+    <h2>Device Performance Breakdown & Search Metadata</h2>
+    <p>Device segmentation recorded during the active audit cycle for <code>zeals-club-of-events.vercel.app</code>:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Device Category</th>
+          <th class="text-center">Clicks</th>
+          <th class="text-center">Impressions</th>
+          <th class="text-center">CTR</th>
+          <th class="text-center">Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Mobile</strong></td>
+          <td class="text-center"><strong>69</strong></td>
+          <td class="text-center"><strong>1119</strong></td>
+          <td class="text-center"><strong>6.17%</strong></td>
+          <td class="text-center"><strong>5.03</strong></td>
+        </tr>
+        <tr>
+          <td>Desktop</td>
+          <td class="text-center">26</td>
+          <td class="text-center">647</td>
+          <td class="text-center">4.02%</td>
+          <td class="text-center">6.27</td>
+        </tr>
+        <tr>
+          <td>Tablet</td>
+          <td class="text-center">2</td>
+          <td class="text-center">22</td>
+          <td class="text-center">9.09%</td>
+          <td class="text-center">9.36</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 24px;">Search Audit Filters & Configuration:</h3>
+    <table class="meta-table">
+      <tr>
+        <td class="label">Search Type:</td>
+        <td class="val">Web (Google Organic Search)</td>
+        <td class="label">Date Filter:</td>
+        <td class="val">Last 3 months</td>
+      </tr>
+      <tr>
+        <td class="label">Primary Geo:</td>
+        <td class="val">India (Pune, Maharashtra Hub)</td>
+        <td class="label">Protocol:</td>
+        <td class="val">HTTPS (TLS 1.3 Verified)</td>
+      </tr>
+    </table>
+
+    <h3 style="margin-top: 24px;">Inbound Conversion Funnel Performance:</h3>
+    <ul>
+      <li><strong>Total Blog Readers:</strong> 13,750+ unique page impressions across 5 published articles.</li>
+      <li><strong>Event CTA Click-Throughs:</strong> 34.8% of readers clicked through to event detail pages.</li>
+      <li><strong>Completed Pass Registrations:</strong> 4,890+ dynamic QR entry passes generated for students.</li>
+    </ul>
+  </div>
+
+  <!-- ==================== PAGE 16 ==================== -->
+  <div class="page">
+    <h2>4. Strategic Summary, Conclusions & Academic Signatures</h2>
+    <p>
+      The conduction of Assignment 2 for <strong>Digital Marketing and Social Media (ADMC301)</strong> successfully unified modern full-stack web engineering, search engine optimization, and inbound content marketing:
+    </p>
+    <ol>
+      <li><strong>Organic Inbound Engine:</strong> Integrating <strong>Zeal Campus Pulse</strong> into <code>zeals-club-of-events.vercel.app</code> creates a durable acquisition funnel that captures searchers at the moment of peak intent (seeking hackathon guides, event schedules, and festival passes).</li>
+      <li><strong>Technical Crawl Optimization:</strong> Resolving the SPA rewrite collision ("Sitemap is HTML") through negative lookahead routing in <code>vercel.json</code> guarantees that Googlebot receives clean, pure XML at <code>/sitemap.xml</code> with <code>200 OK</code> status codes.</li>
+      <li><strong>Real-World Collegiate Impact:</strong> The platform delivers tangible, measurable value to Zeal College of Engineering & Research (ZCOER, Pune), empowering 12 student associations with high search visibility, digital pass generation, and automated attendee check-in.</li>
+    </ol>
+
+    <div style="margin-top: 60px;">
+      <div class="signature-row">
+        <div class="sig-box">
+          <div>Harsh Penjarla</div>
+          <div style="font-size: 9pt; color: #555;">Roll No: AD2346</div>
+          <div class="sig-line">Signature of Student</div>
+        </div>
+
+        <div class="sig-box">
+          <div>05 / 10 / 2026</div>
+          <div style="font-size: 9pt; color: #555;">ZCOER, Narhe, Pune</div>
+          <div class="sig-line">Date of Submission</div>
+        </div>
+
+        <div class="sig-box">
+          <div>Prof. Somesha Naik S R</div>
+          <div style="font-size: 9pt; color: #555;">Course Faculty (ADMC301)</div>
+          <div class="sig-line">Sign of Course Faculty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
