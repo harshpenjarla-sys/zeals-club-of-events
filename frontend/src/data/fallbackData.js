@@ -1139,5 +1139,132 @@ export const fallbackData = {
       "event_id": "Logistics",
       "created_at": "2026-09-30T12:47:08.956Z"
     }
-  ]
+  ],
+  blogs: [
+  {
+    "id": 1,
+    "title": "How AI & Predictive Analytics Are Transforming College Event Management at ZCOER",
+    "slug": "ai-predictive-analytics-college-event-management-zcoer",
+    "excerpt": "From dynamic crowd flow optimization at Chhatrapati Shivaji Auditorium to personalized hackathon matchmaking, discover how AI is powering Zeal's student engagement.",
+    "category": "Tech & AI",
+    "author": {
+      "name": "Harsh Penjarla",
+      "role": "Student Researcher, S.Y. B.Tech AIDS C",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+    },
+    "published_at": "2026-10-02",
+    "read_time": "6 min read",
+    "views": 1420,
+    "banner": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "AI in Events",
+      "Predictive Modeling",
+      "Digital Marketing",
+      "ZCOER Narhe",
+      "Data Science"
+    ],
+    "related_event_slug": "techzeal-2026-national-hackathon",
+    "content": "\n      <p class=\"lead text-lg text-slate-300 mb-6\">Organizing modern campus festivals with thousands of attendees is no longer just about physical posters and megaphone announcements. At Zeal College of Engineering and Research (ZCOER, Pune), artificial intelligence and real-time data science are revolutionizing how 10,000+ students connect, register, and experience campus life.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">1. The Challenge of Scale in College Events</h2>\n      <p class=\"text-slate-300 mb-4\">Every year, flagship festivals like <strong>ZEAL UDAAN</strong> and <strong>ZEAL RANANGAN</strong> witness colossal turnouts. Managing line check-ins at the Chhatrapati Shivaji Auditorium, allocating bandwidth at the Turing Computing Facility, and preventing bottlenecks at security gates require proactive mathematical forecasting.</p>\n      \n      <div class=\"p-4 rounded-xl bg-purple-900/20 border border-purple-500/30 my-6\">\n        <h4 class=\"font-bold text-purple-300 mb-1\">Key Data Metric:</h4>\n        <p class=\"text-slate-300 text-sm\">By analyzing past attendee timestamps from 2024 to 2026, predictive models deployed on our platform forecast peak check-in intervals with 94.2% accuracy, trimming wait times from 18 minutes to under 45 seconds.</p>\n      </div>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">2. QR Code Authentication & Instant Attendance</h2>\n      <p class=\"text-slate-300 mb-4\">Traditional paper passes are prone to loss, counterfeiting, and slow physical checking. Zeal's Club of Events platform generates dynamic cryptographic QR passes tied to verified student IDs (ZPRN). Coordinators equipped with mobile web scanners authenticate students in 0.8 seconds, recording attendance in a unified SQLite and cloud ledger.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">3. Algorithmic Matching for Hackathons & Teaming</h2>\n      <p class=\"text-slate-300 mb-4\">For events like <strong>TechZeal National Hackathon 2026</strong>, finding teammates with complementary skill sets (e.g., Fullstack + Data Science + UI/UX) is the biggest hurdle. Using natural language processing on student profiles, our recommender system suggests synergistic collaborators, boosting project completion rates by 42%.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">4. Automated Verification & Instant Credentialing</h2>\n      <p class=\"text-slate-300 mb-4\">Gone are the days of queuing for paper certificates after a 36-hour hackathon. Attendees now receive cryptographically verifiable digital certificates with unique hash credentials (e.g., <code>ZCOER-CERT-2026-0042</code>) that can be embedded into LinkedIn or verified by employers instantly.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">The Future: Generative Scheduling & Autonomous Event Agents</h2>\n      <p class=\"text-slate-300 mb-6\">As we advance into the 2026-27 academic session, our student developers in the AI & DS department are integrating autonomous LLM agents that will automate clash-free venue scheduling and personalized SMS/WhatsApp event reminders for all 12 student associations.</p>\n    "
+  },
+  {
+    "id": 2,
+    "title": "The Comprehensive Digital Marketing Playbook for College Student Clubs",
+    "slug": "digital-marketing-playbook-college-student-clubs",
+    "excerpt": "How student associations at Zeal College boosted event registrations by 180% using technical SEO, Google Search Console tracking, and strategic content pillars.",
+    "category": "Digital Marketing",
+    "author": {
+      "name": "Harsh Penjarla & ACES Media Cell",
+      "role": "Head of Content, S.Y. B.Tech AIDS C",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80"
+    },
+    "published_at": "2026-09-29",
+    "read_time": "7 min read",
+    "views": 2850,
+    "banner": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Content Marketing",
+      "SEO Strategies",
+      "Inbound Funnel",
+      "Google Search Console",
+      "Organic Growth"
+    ],
+    "related_event_slug": "zcei-startup-pitch-summit-2026",
+    "content": "\n      <p class=\"lead text-lg text-slate-300 mb-6\">How do you convince 3,000+ busy engineering students to attend your club's coding contest, cultural night, or technical seminar? The answer isn't spamming class WhatsApp groups—it's building a repeatable Inbound Digital Marketing engine.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">1. The Three Pillars of Campus Digital Marketing</h2>\n      <p class=\"text-slate-300 mb-4\">At Zeal College of Engineering & Research, our digital marketing campaign for student events was designed around three interrelated pillars:</p>\n      <ul class=\"list-disc list-inside text-slate-300 space-y-2 mb-6\">\n        <li><strong>Discoverability (SEO & Indexing):</strong> Ensuring students searching for \"hackathons in Pune\", \"ZCOER cultural fest 2026\", or \"Ranangan tournament fixtures\" find our official portal at the top of Google.</li>\n        <li><strong>Frictionless Conversion (UI/UX):</strong> 2-click event registration with pre-filled student credentials and instant QR ticket generation.</li>\n        <li><strong>Advocacy & Social Proof:</strong> Highlighting verified attendee counts, leaderboards, and instant certificate verification.</li>\n      </ul>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">2. Technical SEO Conduction via Google Search Console</h2>\n      <p class=\"text-slate-300 mb-4\">By integrating an automated XML sitemap (<code>/sitemap.xml</code>) and verifying domain ownership in Google Search Console, all 12 club pages and flagship events were indexed by Googlebot. Within 3 weeks of publication, organic impressions grew by <strong>+96%</strong>, maintaining an average ranking position of 5.09 for primary academic queries.</p>\n\n      <div class=\"p-5 rounded-2xl bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-500/30 my-6\">\n        <h4 class=\"font-bold text-blue-300 mb-2\">Pro Tip for Student Marketers:</h4>\n        <p class=\"text-slate-300 text-sm\">Always verify that your Single Page Application (SPA) doesn't serve standard HTML pages for XML sitemaps or robots.txt. Configuring clean URL rewrites in <code>vercel.json</code> ensures search crawlers receive pure XML with <code>200 OK</code> status codes.</p>\n      </div>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">3. High-Converting Content Funnels</h2>\n      <p class=\"text-slate-300 mb-4\">Instead of generic promotional posters, we implemented topic clusters: writing detailed guides (e.g., \"How to crack the Robowars combat arena\") that solve real participant queries. At the conclusion of each article, a focused Call-to-Action (CTA) guides the reader to the event registration portal.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">4. Measuring What Matters (KPIs)</h2>\n      <p class=\"text-slate-300 mb-4\">We tracked primary funnel metrics:</p>\n      <ul class=\"list-disc list-inside text-slate-300 space-y-2 mb-6\">\n        <li><strong>Click-Through Rate (CTR):</strong> Benchmark of 5.4% to 6.2% across mobile search devices.</li>\n        <li><strong>Ticket Conversion Rate:</strong> 34.8% of blog readers clicked through to claim an event pass.</li>\n        <li><strong>Retention Rate:</strong> 68% of registered attendees bookmarked their passes in the student dashboard.</li>\n      </ul>\n    "
+  },
+  {
+    "id": 3,
+    "title": "Ultimate Guide to Cracking TechZeal 2026: Hackathons, System Design & Pitching",
+    "slug": "cracking-techzeal-2026-hackathon-guide",
+    "excerpt": "Everything you need to know about the 36-hour national hackathon at Turing CCF lab, judging rubrics, team formation strategies, and prize-winning design patterns.",
+    "category": "Event Guides",
+    "author": {
+      "name": "Devika Nair",
+      "role": "Technical Lead, ACES ZCOER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+    },
+    "published_at": "2026-09-25",
+    "read_time": "6 min read",
+    "views": 3190,
+    "banner": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "TechZeal",
+      "Hackathon Prep",
+      "Problem Statements",
+      "Coding Contests",
+      "System Architecture"
+    ],
+    "related_event_slug": "techzeal-2026-national-hackathon",
+    "content": "\n      <p class=\"lead text-lg text-slate-300 mb-6\">TechZeal 2026 is ZCOER's flagship national hackathon, bringing together 500+ builders for 36 hours of non-stop coding, problem-solving, and innovation. Here is the insider guide to taking home the grand trophy and cash prize pool.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">1. Understand the 4 Real-World Problem Tracks</h2>\n      <p class=\"text-slate-300 mb-4\">This year's challenge statements span four high-impact verticals:</p>\n      <ul class=\"list-disc list-inside text-slate-300 space-y-2 mb-6\">\n        <li><strong>Smart Campus & EdTech:</strong> Real-time student attendance, automated club operations, and IoT energy grids.</li>\n        <li><strong>Healthcare & MedTech AI:</strong> Early anomaly detection using deep neural architectures on multi-modal clinical signals.</li>\n        <li><strong>FinTech & Secure Decentralized Protocols:</strong> Micro-transactions, digital credential verification, and zero-knowledge proofs.</li>\n        <li><strong>Open Innovation for Maharashtra:</strong> Agricultural telemetry, rural logistics, and water conservation technologies.</li>\n      </ul>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">2. The Winning 4-Member Team Composition</h2>\n      <p class=\"text-slate-300 mb-4\">Avoid building a team of 4 frontend coders. The highest-scoring teams consistently balance roles:</p>\n      <ol class=\"list-decimal list-inside text-slate-300 space-y-2 mb-6\">\n        <li><strong>System Architect / Backend:</strong> Handles API contracts, database schemas, and cloud deployment.</li>\n        <li><strong>Frontend / UI Developer:</strong> Builds a polished, responsive React/Next.js interface that wows the jury in 30 seconds.</li>\n        <li><strong>Domain Specialist / Data Scientist:</strong> Trains or fine-tunes AI models, evaluates metrics, and handles data pipelines.</li>\n        <li><strong>Pitch Lead & Product Strategist:</strong> Crafts the slide deck, structures the financial viability, and handles Q&A.</li>\n      </ol>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">3. What Judges Really Care About</h2>\n      <p class=\"text-slate-300 mb-4\">Jury members evaluate submissions based on four 25-point weighted criteria: Technical Complexity (25%), Business Feasibility & UX (25%), Working Prototype Completeness (25%), and Presentation Delivery (25%). A fully working MVP always beats an ambitious unfinished idea.</p>\n    "
+  },
+  {
+    "id": 4,
+    "title": "Behind the Curtains: How ZEAL UDAAN 2026 Orchestrates Maharashtra's Biggest Cultural Fest",
+    "slug": "behind-the-curtains-zeal-udaan-2026-cultural-fest",
+    "excerpt": "Take a deep dive into the audio-visual rigging, celebrity guest negotiations, stage schedules, and student council coordination powering Pune's premier youth festival.",
+    "category": "Cultural Highlights",
+    "author": {
+      "name": "Ananya Deshmukh",
+      "role": "UDAAN General Secretary & Student Council",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+    },
+    "published_at": "2026-09-22",
+    "read_time": "5 min read",
+    "views": 4420,
+    "banner": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Udaan 2026",
+      "Battle of Bands",
+      "Cultural Showcase",
+      "Amphitheatre",
+      "Campus Vibe"
+    ],
+    "related_event_slug": "zeal-udaan-2026-cultural-fest",
+    "content": "\n      <p class=\"lead text-lg text-slate-300 mb-6\">When 6,000 students illuminate the Swami Vivekananda Open Air Amphitheatre with phone torches as the Battle of Bands hits its crescendo, few realize the 4 months of relentless logistical engineering that make it happen.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">1. The Anatomy of a Mega Festival</h2>\n      <p class=\"text-slate-300 mb-4\">ZEAL UDAAN is more than a cultural show—it is an inter-departmental enterprise managed by over 200 student volunteers across 8 specialized working committees: Stage & Sound Engineering, Hospitality & Celebrity Management, Security & Entry Gate Operations, Brand Sponsorships, and Digital Media & Ticketing.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">2. Digital Passes Over Physical Tickets</h2>\n      <p class=\"text-slate-300 mb-4\">For the first time this academic year, all ticket allocations were migrated to the Zeal's Club of Events digital portal. Students claimed their priority passes using their official college email. With zero physical printing waste, the college saved over ₹65,000 in paper costs and eliminated ticket duplication entirely.</p>\n    "
+  },
+  {
+    "id": 5,
+    "title": "Zeal Ranangan 2026: Fitness, Olympic-Standard Turf Tactics & Tournament Fixtures",
+    "slug": "zeal-ranangan-2026-sports-tournament-fixtures-guide",
+    "excerpt": "Rules, training schedules, box cricket tactics, and team brackets for 40+ engineering colleges battling for the state championship at ZCOER.",
+    "category": "Sports & Fitness",
+    "author": {
+      "name": "Rohan Kulkarni",
+      "role": "Sports Council President",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80"
+    },
+    "published_at": "2026-09-18",
+    "read_time": "5 min read",
+    "views": 1870,
+    "banner": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Ranangan",
+      "Sports Ground",
+      "Football League",
+      "Athletic Turf",
+      "Inter-Collegiate"
+    ],
+    "related_event_slug": "zeal-ranangan-2026-sports-tournament",
+    "content": "\n      <p class=\"lead text-lg text-slate-300 mb-6\">The annual ZEAL RANANGAN sports fest transforms the Narhe campus into a battleground of athleticism, discipline, and collegiate pride. Here are the match structures and pitch conditions you need to know before stepping onto the turf.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">1. State-of-the-Art Athletic Facilities</h2>\n      <p class=\"text-slate-300 mb-4\">ZCOER boasts an Olympic-specification floodlit athletic ground with artificial grass turf, synthetic running tracks, and professional court marking for Volleyball, Basketball, and Kho-Kho. High-mast LED lighting ensures night tournament matches run under international broadcast illumination standards.</p>\n\n      <h2 class=\"text-2xl font-bold text-white mt-8 mb-4\">2. The 2026 Fixture Structure</h2>\n      <p class=\"text-slate-300 mb-4\">Over 40 engineering institutes across Pune, Mumbai, Nashik, and Kolhapur have registered their varsity squads. Knockout stages commence on October 12th, followed by semi-finals and the grand floodlit football final on October 14th.</p>\n    "
+  }
+]
 };

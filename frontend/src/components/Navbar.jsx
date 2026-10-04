@@ -28,6 +28,7 @@ export default function Navbar({ currentRoute, onNavigate, onOpenSearch }) {
     { id: 'events', label: 'Events' },
     { id: 'clubs', label: 'Clubs' },
     { id: 'calendar', label: 'Calendar' },
+    { id: 'blog', label: 'Blog' },
     { id: 'map', label: 'Campus Map' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'announcements', label: 'Announcements' },

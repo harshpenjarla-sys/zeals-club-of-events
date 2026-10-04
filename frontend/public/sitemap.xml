@@ -46,6 +46,38 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Official ZCOER Campus Pulse Blogs (Content Marketing) -->
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog/ai-predictive-analytics-college-event-management-zcoer</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog/digital-marketing-playbook-college-student-clubs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog/cracking-techzeal-2026-hackathon-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog/behind-the-curtains-zeal-udaan-2026-cultural-fest</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zeals-club-of-events.vercel.app/blog/zeal-ranangan-2026-sports-tournament-fixtures-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Official ZCOER Events -->
   <url>

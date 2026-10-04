@@ -273,6 +273,35 @@ export const api = {
   deleteEvent: (id) => apiRequest(`/events/${id}`, { method: 'DELETE' }).catch(() => ({ success: true })),
   saveEvent: (id) => apiRequest(`/events/${id}/save`, { method: 'POST' }).catch(() => ({ success: true, saved: true })),
 
+  // Blogs & Content Marketing Engine
+  getBlogs: async (params = {}) => {
+    try {
+      const query = new URLSearchParams(params).toString();
+      const data = await apiRequest(`/blogs${query ? `?${query}` : ''}`);
+      if (data && data.blogs && data.blogs.length > 0) return data;
+    } catch (e) {}
+    let list = [...(fallbackData.blogs || [])];
+    if (params.category && params.category !== 'All') {
+      list = list.filter(b => b.category?.toLowerCase() === params.category.toLowerCase());
+    }
+    if (params.search) {
+      const s = params.search.toLowerCase();
+      list = list.filter(b => b.title?.toLowerCase().includes(s) || b.excerpt?.toLowerCase().includes(s) || b.tags?.some(t => t.toLowerCase().includes(s)));
+    }
+    return { blogs: list, count: list.length };
+  },
+
+  getBlog: async (slugOrId) => {
+    try {
+      const data = await apiRequest(`/blogs/${slugOrId}`);
+      if (data && data.blog) return data;
+    } catch (e) {}
+    const list = fallbackData.blogs || [];
+    const found = list.find(b => b.slug === slugOrId || String(b.id) === String(slugOrId));
+    if (found) return { blog: found };
+    throw new Error('Blog article not found');
+  },
+
   // Clubs
   getClubs: async (params = {}) => {
     try {

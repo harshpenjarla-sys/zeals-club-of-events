@@ -24,6 +24,8 @@ import RegisterPage from './pages/RegisterPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import VerifyCertificatePage from './pages/VerifyCertificatePage';
+import BlogPage from './pages/BlogPage';
+import BlogDetailPage from './pages/BlogDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -95,6 +97,18 @@ export default function App() {
       );
     }
 
+    // Blog details route: blog/:slug
+    if (currentRoute.startsWith('blog/')) {
+      const slug = currentRoute.replace('blog/', '');
+      return (
+        <BlogDetailPage
+          slug={slug}
+          onNavigate={navigateTo}
+          onRegisterEvent={(ev) => setRegisterEvent(ev)}
+        />
+      );
+    }
+
     // Verify certificate: verify/:id
     if (currentRoute.startsWith('verify')) {
       const certId = currentRoute.includes('/') ? currentRoute.split('/')[1] : '';
@@ -109,6 +123,8 @@ export default function App() {
             onRegisterEvent={(ev) => setRegisterEvent(ev)}
           />
         );
+      case 'blog':
+        return <BlogPage onNavigate={navigateTo} />;
       case 'events':
         return (
           <EventsPage

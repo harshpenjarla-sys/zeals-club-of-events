@@ -77,6 +77,11 @@ export default function Footer({ onNavigate }) {
             <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4">Community</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
+                <button onClick={() => onNavigate('blog')} className="hover:text-purple-400 transition-colors">
+                  Campus Pulse (Blog)
+                </button>
+              </li>
+              <li>
                 <button onClick={() => onNavigate('announcements')} className="hover:text-purple-400 transition-colors">
                   Campus News & Notices
                 </button>
